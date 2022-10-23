@@ -1,0 +1,46 @@
+body {
+    font-family: Montserrat;
+}
+
+.menu {
+    display: flex;
+    padding: 0;
+    background-color: #ccc;
+    justify-content: center;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu a {
+    display: block;
+    min-width: 120px;
+    margin: 0.5rem;              
+    padding: 0.4rem 0;            
+    text-align: center;             
+    background-color: #e59154;    
+    color: #fff;                 
+    text-decoration: none;        
+    border: 1px solid #efc09a;       
+    border-radius: 4px;
+    transition: all 1s;
+}
+
+.menu a:hover {
+    background-color: #e59154;
+    color: #ffff;
+    border-color: #efc09a;
+}
+
+.menu a.actif {
+    background-color: #e0801a;
+    color : #ffff;
+    border-color: #efc09a;
+}
+
+.menu a:hover, .menu a:hover.actif {
+    background-color: #efc09a;
+    color: #ffff;
+    border-color: #efc09a;
+}
