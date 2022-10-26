@@ -32,3 +32,7 @@ Route::get('gaminger/public/events', function () {
 Route::get('gaminger/public/contact', function () {
     return view('contact');
 });
+
+Route::get('gaminger/public/admin', function () {
+    return view('admin');
+});

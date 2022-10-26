@@ -1,46 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: Montserrat;
+    font-family: Montserrat Regular;
+    background-color: #323232;
 }
 
 .menu {
     display: flex;
     padding: 0;
-    background-color: #ccc;
+    background-color: #505050;
     justify-content: center;
 }
 
 .menu li {
     list-style-type: none;
+    width: 20%;
 }
 
 .menu a {
     display: block;
     min-width: 120px;
-    margin: 0.5rem;              
-    padding: 0.4rem 0;            
-    text-align: center;             
-    background-color: #e59154;    
-    color: #fff;                 
-    text-decoration: none;        
-    border: 1px solid #efc09a;       
-    border-radius: 4px;
-    transition: all 1s;
+    margin: 1.5rem;
+    padding: 1rem 0;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    line-height: 25px;
 }
 
 .menu a:hover {
-    background-color: #e59154;
     color: #ffff;
-    border-color: #efc09a;
 }
 
 .menu a.actif {
-    background-color: #e0801a;
-    color : #ffff;
-    border-color: #efc09a;
+    color: #EFC09A;
 }
 
-.menu a:hover, .menu a:hover.actif {
-    background-color: #efc09a;
-    color: #ffff;
-    border-color: #efc09a;
+.menu a:hover.actif {
+    color: #EFC09A;
+}
+
+.logo {
+    height: auto;
+    width: 40%;
+    padding-left: 4rem;
+}
+
+@font-face {
+    font-family: 'LEMON MILK';
+    font-weight: 400;
+    src: url(‘/gaminger/fonts/LEMONMILK-BOLD.otf’) format(‘opentype’);
+}
+
+.banner {
+    width: 1519px;
+}
+
+.titre-banner {
+    font-family: LEMON MILK;
+    font-size: 60px;
+    color: white;
+    padding-left: 250px;
+    margin-top: -300px;
+}
+
+.boutons {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.cocktails {
+    color: #E59154;
+    border-style: solid;
+    border-color: #E59154;
+    background-color: transparent;
+    font-size: 18px;
+    padding: 25px;
+    margin-right: 35px;
+    font-family: Montserrat Regular;
+    box-shadow: 1px 1px 10px #E59154;
+}
+
+.events {
+    color: #E59154;
+    border-style: solid;
+    border-color: #E59154;
+    background-color: transparent;
+    font-size: 18px;
+    padding: 25px;
+    margin-left: 35px;
+    font-family: Montserrat Regular;
+    box-shadow: 1px 1px 10px #E59154;
+    }
+
+.a-propos {
+    color: white;
+}
+
+.a-propos h2 {
+    font-family: Montserrat SemiBold;
+    padding-left: 262px;
+    margin-top: 140px;
+    font-size: 48px;
+}
+
+.a-propos p {
+    padding-left: 262px;
+    padding-right: 262px;
+    padding-top: 50px;
+    ;
+}
+
+.nos-services {
+    color: white;
+}
+
+.nos-services h2 {
+    font-family: Montserrat SemiBold;
+    padding-left: 262px;
+    margin-top: 115px;
+    font-size: 48px;
+}
+
+.nos-services ul {
+    padding-left: 262px;
+    padding-right: 262px;
+    padding-top: 50px;
+    ;
+}
+
+.nos-services li {
+    list-style-type: none;
+}
+
+.icones {
+    display: flex;
+    justify-content: center;
+}
+
+.map {
+    color: #E0801A;
+    padding-left: 113px;
+    font-size: 48px;
+}
+
+.sur-place {
+    padding-left: 98px;
+    font-style: normal;
+    font-size: 21px;
+}
+
+.glass {
+    color: #E0801A;
+    padding-left: 200px;
+    font-size: 48px;
+}
+
+.des-cocktails {
+    padding-left: 160px;
+    font-style: normal;
+    font-size: 21px;
+}
+
+.calendar {
+    color: #E0801A;
+    padding-left: 225px;
+    font-size: 48px;
+}
+
+.des-events {
+    padding-left: 160px;
+    font-style: normal;
+    font-size: 21px;
+}
+
+.checked {
+    color: #E0801A;
+    padding-left: 195px;
+    font-size: 48px;
+}
+
+.du-fun {
+    padding-left: 178px;
+    font-style: normal;
+    font-size: 21px;
+}
+
+.notre-bar {
+    color: white;
+}
+
+@font-face {
+    font-family: 'Montserrat Regular';
+    font-weight: 400;
+    src: url(‘/gaminger/fonts/Montserrat-Regular.ttf’) format(‘truetype’);
+}
+
+@font-face {
+    font-family: 'Montserrat SemiBold';
+    font-weight: 400;
+    src: url(‘/gaminger/fonts/Montserrat-SemiBold.ttf’) format(‘truetype’);
+}
+
+.notre-bar h2 {
+    font-family: Montserrat SemiBold;
+    padding-left: 262px;
+    margin-top: 115px;
+    font-size: 48px;
+}
+
+.en-images {
+    font-family: Montserrat;
+    color: #E0801A;
+}
+
+.bar-img1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar-img1>img {
+    width: 400px;
+}
+
+.img1 {
+    margin-left: 325px;
+}
+
+.img2 {
+    margin-right: 325px;
+}
+
+.bar-img2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar-img2>img {
+    width: 400px;
+}
+
+.img3 {
+    margin-left: 325px;
+}
+
+.img4 {
+    margin-right: 325px;
+}
+
+.footer {
+    display: flex;
+    padding: 0;
+    background-color: #505050;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.footer>div {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: center;
+    color: white;
+    align-items: center;
+}
+
+.footer>div>div>a {
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+    color: white;
+    align-items: center;
+    text-decoration: none;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 15px;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.footer>div>div>i {
+    display: flex;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 24px;
+}
+
+.end-footer {
+    color: white;
+    font-size: 12px;
+    background-color: #505050;
+    text-align: center;
+}
+
+.logo2 {
+    height: auto;
+    width: 20%;
+    padding-left: 4rem;
 }
