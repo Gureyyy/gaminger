@@ -7,7 +7,7 @@
     <script src="https://kit.fontawesome.com/26e46cf4bd.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <title>Gaminger</title>
+    <title>Gaminger - Accueil</title>
     <link rel="stylesheet" href="/gaminger/resources/css/accueil.css">
     <link href="/gaminger/resources/fontawesome-free" rel="stylesheet">
 
@@ -41,8 +41,8 @@
         <img class="banner" src="/gaminger/resources/css/imgs/banner-site.jpg"></img>
         <h1 class="titre-banner">Gaminger<br>Bar événementiel gaming</h1>
         <div class="boutons">
-            <button class="cocktails">Nos cocktails</button>
-            <button class="events">Nos événements</button>
+            <a class="cocktails" href="">Nos cocktails</a>
+            <a class="events" href="">Nos événements</a>
         </div>
     </div>
     <div class="a-propos">
@@ -103,10 +103,10 @@
         </div>
         <div class="social">
             <div>
-                <i class="fa-brands fa-twitter twitter"></i>
+                <a href="https://twitter.com"><i class="fa-brands fa-twitter twitter"></i></a>
             </div>
             <div>
-                <i class="fa-brands fa-instagram insta"></i>
+                <a href="https://instagram.com"><i class="fa-brands fa-instagram insta"></i></a>
             </div>
         </div><br>
     </div>

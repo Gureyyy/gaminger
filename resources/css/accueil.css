@@ -32,7 +32,7 @@ body {
 }
 
 .menu a:hover {
-    color: #ffff;
+    color: #EFC09A;
 }
 
 .menu a.actif {
@@ -63,13 +63,13 @@ body {
     font-family: LEMON MILK;
     font-size: 60px;
     color: white;
-    padding-left: 250px;
+    padding-left: 230px;
     margin-top: -300px;
 }
 
 .boutons {
     text-align: center;
-    margin-top: 35px;
+    margin-top: 60px;
 }
 
 .cocktails {
@@ -81,7 +81,9 @@ body {
     padding: 25px;
     margin-right: 35px;
     font-family: Montserrat Regular;
-    box-shadow: 1px 1px 10px #E59154;
+    box-shadow: 1px 1px 15px 1px #E59154;
+    border-width: 3px;
+    text-decoration: none;
 }
 
 .events {
@@ -93,7 +95,9 @@ body {
     padding: 25px;
     margin-left: 35px;
     font-family: Montserrat Regular;
-    box-shadow: 1px 1px 10px #E59154;
+    box-shadow: 1px 1px 15px 1px #E59154;
+    border-width: 3px;
+    text-decoration: none;
     }
 
 .a-propos {
@@ -104,7 +108,7 @@ body {
     font-family: Montserrat SemiBold;
     padding-left: 262px;
     margin-top: 140px;
-    font-size: 48px;
+    font-size: 42px;
 }
 
 .a-propos p {
@@ -122,7 +126,7 @@ body {
     font-family: Montserrat SemiBold;
     padding-left: 262px;
     margin-top: 115px;
-    font-size: 48px;
+    font-size: 42px;
 }
 
 .nos-services ul {
@@ -209,7 +213,7 @@ body {
     font-family: Montserrat SemiBold;
     padding-left: 262px;
     margin-top: 115px;
-    font-size: 48px;
+    font-size: 42px;
 }
 
 .en-images {
@@ -283,9 +287,10 @@ body {
     font-size: 14px;
 }
 
-.footer>div>div>i {
+.footer>div>div>a>i {
     display: flex;
     width: 100%;
+    margin-top: 5px;
     padding-left: 5px;
     padding-right: 5px;
     font-size: 24px;
