@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/26e46cf4bd.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="/gaminger/resources/css/imgs/Logo-GGr-icon.ico"/>
     <title>Gaminger - Nos événements</title>
     <link rel="stylesheet" href="/gaminger/resources/css/event.css">
     <link href="/gaminger/resources/fontawesome-free" rel="stylesheet">

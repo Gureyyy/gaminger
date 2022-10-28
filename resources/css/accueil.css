@@ -10,19 +10,20 @@ body {
 
 .menu {
     display: flex;
-    padding: 0;
+    flex-direction: row;
     background-color: #505050;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .menu li {
     list-style-type: none;
-    width: 20%;
+    width: auto;
 }
 
 .menu a {
-    display: block;
-    min-width: 120px;
+    display: flex;
+    width: auto;
     margin: 1.5rem;
     padding: 1rem 0;
     text-align: center;
@@ -45,34 +46,47 @@ body {
 
 .logo {
     height: auto;
-    width: 40%;
+    width: 100%;
     padding-left: 4rem;
+}
+
+.logo-header {
+    width: 100px;
 }
 
 @font-face {
     font-family: 'LEMON MILK';
     font-weight: 400;
-    src: url(‘/gaminger/fonts/LEMONMILK-BOLD.otf’) format(‘opentype’);
+    src: url('/gaminger/fonts/LEMONMILK-BOLD.otf') format('opentype');
 }
 
 .banner {
-    width: 1519px;
+    background-image: url('/gaminger/resources/css/imgs/banner-site.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.titre-banner {
+.banner>.gaminger-titre {
+    padding-top: 100px;
+}
+
+.banner>h1 {
     font-family: LEMON MILK;
     font-size: 60px;
     color: white;
-    padding-left: 230px;
-    margin-top: -300px;
+    padding-left: 200px;
 }
 
-.boutons {
+.banner-boutons {
     text-align: center;
-    margin-top: 60px;
+    height: 60px;
+    margin-top: 25px;
+    padding-top: 75px;
+    padding-bottom: 25px;
 }
 
-.cocktails {
+
+.banner-boutons>a {
     color: #E59154;
     border-style: solid;
     border-color: #E59154;
@@ -80,60 +94,67 @@ body {
     font-size: 18px;
     padding: 25px;
     margin-right: 35px;
-    font-family: Montserrat Regular;
     box-shadow: 1px 1px 15px 1px #E59154;
-    border-width: 3px;
     text-decoration: none;
 }
 
-.events {
-    color: #E59154;
-    border-style: solid;
-    border-color: #E59154;
-    background-color: transparent;
-    font-size: 18px;
-    padding: 25px;
-    margin-left: 35px;
-    font-family: Montserrat Regular;
-    box-shadow: 1px 1px 15px 1px #E59154;
-    border-width: 3px;
-    text-decoration: none;
-    }
+.partie-a-propos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.div-gauche-a-propos {
+    width: 15%;
+}
+
+.div-droite-a-propos {
+    width: 15%;
+}
 
 .a-propos {
     color: white;
+    width: 70%;
 }
 
 .a-propos h2 {
     font-family: Montserrat SemiBold;
-    padding-left: 262px;
-    margin-top: 140px;
+    margin-top: 70px;
     font-size: 42px;
 }
 
 .a-propos p {
-    padding-left: 262px;
-    padding-right: 262px;
     padding-top: 50px;
-    ;
 }
 
 .nos-services {
     color: white;
+    width: 70%;
+}
+
+.partie-nos-services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.div-gauche-nos-services {
+    width: 15%;
+}
+
+.div-droite-nos-services {
+    width: 15%;
 }
 
 .nos-services h2 {
     font-family: Montserrat SemiBold;
-    padding-left: 262px;
-    margin-top: 115px;
+    margin-top: 90px;
     font-size: 42px;
 }
 
 .nos-services ul {
-    padding-left: 262px;
-    padding-right: 262px;
-    padding-top: 50px;
-    ;
+    padding-top: 70px;
 }
 
 .nos-services li {
@@ -142,59 +163,86 @@ body {
 
 .icones {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.carte {
+    text-align: center;
 }
 
 .map {
     color: #E0801A;
-    padding-left: 113px;
     font-size: 48px;
 }
 
 .sur-place {
-    padding-left: 98px;
     font-style: normal;
     font-size: 21px;
+}
+
+.verre {
+    text-align: center;
 }
 
 .glass {
     color: #E0801A;
-    padding-left: 200px;
     font-size: 48px;
 }
 
 .des-cocktails {
-    padding-left: 160px;
     font-style: normal;
     font-size: 21px;
+}
+
+.calendrier {
+    text-align: center;
 }
 
 .calendar {
     color: #E0801A;
-    padding-left: 225px;
     font-size: 48px;
 }
 
 .des-events {
-    padding-left: 160px;
     font-style: normal;
     font-size: 21px;
+}
+
+.cocher {
+    text-align: center;
 }
 
 .checked {
     color: #E0801A;
-    padding-left: 195px;
     font-size: 48px;
 }
 
 .du-fun {
-    padding-left: 178px;
     font-style: normal;
     font-size: 21px;
 }
 
+
+
+.partie-notre-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.div-gauche-notre-bar {
+    width: 15%;
+}
+
+.div-droite-notre-bar {
+    width: 15%;
+}
+
 .notre-bar {
     color: white;
+    width: 70%;
 }
 
 @font-face {
@@ -211,7 +259,6 @@ body {
 
 .notre-bar h2 {
     font-family: Montserrat SemiBold;
-    padding-left: 262px;
     margin-top: 115px;
     font-size: 42px;
 }
@@ -223,46 +270,27 @@ body {
 
 .bar-img1 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .bar-img1>img {
     width: 400px;
 }
 
-.img1 {
-    margin-left: 325px;
-}
-
-.img2 {
-    margin-right: 325px;
-}
-
 .bar-img2 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .bar-img2>img {
     width: 400px;
 }
 
-.img3 {
-    margin-left: 325px;
-}
 
-.img4 {
-    margin-right: 325px;
-}
 
-.footer {
-    display: flex;
-    padding: 0;
-    background-color: #505050;
-    justify-content: center;
-    flex-direction: row;
-    width: 100%;
-}
+
+
+
 
 .footer>div {
     display: flex;
@@ -287,7 +315,7 @@ body {
     font-size: 14px;
 }
 
-.footer>div>div>a>i {
+.div-droite-footer>a>i {
     display: flex;
     width: 100%;
     margin-top: 5px;
@@ -299,12 +327,63 @@ body {
 .end-footer {
     color: white;
     font-size: 12px;
-    background-color: #505050;
     text-align: center;
 }
 
 .logo2 {
+    width: 100px;
     height: auto;
-    width: 20%;
     padding-left: 4rem;
+}
+
+.logo-footer {
+    width: 100%;
+}
+
+.footer-global {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #505050;
+    align-items: center;
+}
+
+.div-gauche-footer {
+    display: flex;
+    width: 20%;
+}
+
+.div-droite-footer {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    list-style-type: none;
+}
+
+.twitter {
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    font-size: 21px;
+    padding-bottom: 10px;
+}
+
+.insta {
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    font-size: 21px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 60%;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.texte-footer {
+    margin-bottom: 30px;
 }
