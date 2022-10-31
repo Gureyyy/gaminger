@@ -112,12 +112,12 @@
         <div class="notre-bar">
             <h2>Notre bar <strong class="en-images">en images</strong></h2><br><br>
             <div class="bar-img1">
-                <img class="img1" src="/gaminger/resources/css/imgs/img1.jpg"></img>
-                <img class="img2" src="/gaminger/resources/css/imgs/img2.jpg"></img>
+                <img class="img1" src="/gaminger/public/css/imgs/img1.jpg"></img>
+                <img class="img2" src="/gaminger/public/css/imgs/img2.jpg"></img>
             </div><br>
             <div class="bar-img2">
-                <img class="img3" src="/gaminger/resources/css/imgs/img3.jpg"></img>
-                <img class="img4" src="/gaminger/resources/css/imgs/img4.jpg"></img>
+                <img class="img3" src="/gaminger/public/css/imgs/img3.jpg"></img>
+                <img class="img4" src="/gaminger/public/css/imgs/img4.jpg"></img>
             </div>
         </div>
 

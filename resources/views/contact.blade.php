@@ -7,10 +7,10 @@
     <script src="https://kit.fontawesome.com/26e46cf4bd.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="shortcut icon" href="/gaminger/resources/css/imgs/Logo-GGr-icon.ico"/>
+    <link rel="shortcut icon" href="/gaminger/public/css/imgs/Logo-GGr-icon.ico"/>
     <title>Gaminger - Contact</title>
-    <link rel="stylesheet" href="/gaminger/resources/css/contact.css">
-    <link href="/gaminger/resources/fontawesome-free" rel="stylesheet">
+    <link rel="stylesheet" href="/gaminger/public/css/contact.css">
+    <link href="/gaminger/public/fontawesome-free" rel="stylesheet">
 
 </head>
 
@@ -18,7 +18,7 @@
 
     <ul class="menu">
         <li>
-            <img class="logo" src="/gaminger/resources/css/imgs/Logo-GGr.png"></img>
+            <img class="logo" src="/gaminger/public/css/imgs/Logo-GGr.png"></img>
         </li>
         <li>
             <a href="accueil">Accueil</a>
@@ -90,7 +90,7 @@
         <div class="image-coords">
             <div class="propriete-image-coords">
                 <div>
-                    <img class="img-maps" src="/gaminger/resources/css/imgs/maps.png"></img>
+                    <img class="img-maps" src="/gaminger/public/css/imgs/maps.png"></img>
                 </div>
             </div>
         </div>
@@ -99,7 +99,7 @@
 
     <div class="footer">
         <div>
-            <img class="logo2" src="/gaminger/resources/css/imgs/Logo-GGr.png"></img>
+            <img class="logo2" src="/gaminger/public/css/imgs/Logo-GGr.png"></img>
         </div>
         <div class="texte">
             <div>
