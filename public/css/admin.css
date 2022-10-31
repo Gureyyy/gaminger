@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Montserrat Regular;
+    background-color: #323232;
+}
+
+.menu {
+    display: flex;
+    padding: 0;
+    background-color: #505050;
+    justify-content: center;
+}
+
+.menu li {
+    list-style-type: none;
+    width: 20%;
+}
+
+.menu a {
+    display: block;
+    min-width: 120px;
+    margin: 1.5rem;
+    padding: 1rem 0;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    line-height: 25px;
+}
+
+.menu a:hover {
+    color: #EFC09A;
+}
+
+.menu a.actif {
+    color: #EFC09A;
+}
+
+.menu a:hover.actif {
+    color: #EFC09A;
+}
+
+.logo {
+    height: auto;
+    width: 40%;
+    padding-left: 4rem;
+}
+
+@font-face {
+    font-family: 'Montserrat SemiBold';
+    font-weight: 400;
+    src: url(‘/gaminger/fonts/Montserrat-SemiBold.ttf’) format(‘truetype’);
+}
+
+.admin-connect {
+    border-radius: 15px;
+    background-color: white;
+    margin-top : 120px;
+    margin-bottom: 120px;
+    margin-left : 400px;
+    margin-right: 400px;
+    padding: 30px;
+    justify-content: center;
+}
+
+.titre-connect {
+    color: #E59154;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: Montserrat SemiBold;
+    font-style: 48px;
+}
+
+.admin-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.login-texte {
+    display: flex;
+    justify-content: center;
+    margin-right: 230px;
+}
+
+.mdp-texte {
+    display: flex;
+    justify-content: center;
+    margin-right: 102px;
+}
+
+.user {
+    color: white;
+    width: 300px;
+    height: 40px;
+    border-style: solid;
+    border-color: #E59154;
+    background-color: transparent;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    font-family: Montserrat Regular;
+    box-shadow: 1px 1px 5px 1px #E59154;
+    border-width: 3px;
+    text-decoration: none;
+}
+
+.user::placeholder {
+    color: #ADADAD;
+}
+
+.mdp {
+    color: white;
+    width: 300px;
+    height: 40px;
+    border-style: solid;
+    border-color: #E59154;
+    background-color: transparent;
+    font-size: 13px;
+    margin-top: 10px;
+    padding-left: 15px;
+    font-family: Montserrat Regular;
+    box-shadow: 1px 1px 5px 1px #E59154;
+    border-width: 3px;
+    text-decoration: none;
+}
+
+.mdp::placeholder {
+    color: #ADADAD;
+}
+
+.connect {
+    color: white;
+    width: 300px;
+    height: 40px;
+    border-style: solid;
+    border-color: #E59154;
+    background-color: #E59154;
+    font-size: 13px;
+    margin-top: 50px;
+    font-family: Montserrat Regular;
+    text-decoration: none;
+}
+
+.connect::placeholder {
+    color: #E59154;
+}
+
+.send {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+
+
+.footer {
+    display: flex;
+    padding: 0;
+    background-color: #505050;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.footer>div {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: center;
+    color: white;
+    align-items: center;
+}
+
+.footer>div>div>a {
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+    color: white;
+    align-items: center;
+    text-decoration: none;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 15px;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.footer>div>div>a>i {
+    display: flex;
+    width: 100%;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 24px;
+}
+
+.end-footer {
+    color: white;
+    font-size: 12px;
+    background-color: #505050;
+    text-align: center;
+}
+
+.logo2 {
+    height: auto;
+    width: 20%;
+    padding-left: 4rem;
+}

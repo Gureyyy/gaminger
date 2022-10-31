@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Montserrat Regular;
+    background-color: #323232;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    background-color: #505050;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu li {
+    list-style-type: none;
+    width: auto;
+}
+
+.menu a {
+    display: flex;
+    width: auto;
+    margin: 1.5rem;
+    padding: 1rem 0;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    line-height: 25px;
+}
+
+.menu a:hover {
+    color: #EFC09A;
+}
+
+.menu a.actif {
+    color: #EFC09A;
+}
+
+.menu a:hover.actif {
+    color: #EFC09A;
+}
+
+.logo {
+    height: auto;
+    width: 100%;
+    padding-left: 4rem;
+}
+
+.logo-header {
+    width: 100px;
+}
+
+@font-face {
+    font-family: 'LEMON MILK';
+    font-weight: 400;
+    src: url('/gaminger/fonts/LEMONMILK-BOLD.otf') format('opentype');
+}
+
+.banner {
+    background-image: url('/gaminger/resources/css/imgs/banner-site.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner>.gaminger-titre {
+    padding-top: 100px;
+}
+
+.banner>h1 {
+    font-family: LEMON MILK;
+    font-size: 60px;
+    color: white;
+    padding-left: 200px;
+}
+
+.banner-boutons {
+    text-align: center;
+    height: 60px;
+    margin-top: 25px;
+    padding-top: 75px;
+    padding-bottom: 25px;
+}
+
+
+.banner-boutons>a {
+    color: #E59154;
+    border-style: solid;
+    border-color: #E59154;
+    background-color: transparent;
+    font-size: 18px;
+    padding: 25px;
+    margin-right: 35px;
+    box-shadow: 1px 1px 15px 1px #E59154;
+    text-decoration: none;
+}
+
+.partie-a-propos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.div-gauche-a-propos {
+    width: 15%;
+}
+
+.div-droite-a-propos {
+    width: 15%;
+}
+
+.a-propos {
+    color: white;
+    width: 70%;
+}
+
+.a-propos h2 {
+    font-family: Montserrat SemiBold;
+    margin-top: 70px;
+    font-size: 42px;
+}
+
+.a-propos p {
+    padding-top: 50px;
+}
+
+.nos-services {
+    color: white;
+    width: 70%;
+}
+
+.partie-nos-services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.div-gauche-nos-services {
+    width: 15%;
+}
+
+.div-droite-nos-services {
+    width: 15%;
+}
+
+.nos-services h2 {
+    font-family: Montserrat SemiBold;
+    margin-top: 90px;
+    font-size: 42px;
+}
+
+.nos-services ul {
+    padding-top: 70px;
+}
+
+.nos-services li {
+    list-style-type: none;
+}
+
+.icones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.carte {
+    text-align: center;
+}
+
+.map {
+    color: #E0801A;
+    font-size: 48px;
+}
+
+.sur-place {
+    font-style: normal;
+    font-size: 21px;
+}
+
+.verre {
+    text-align: center;
+}
+
+.glass {
+    color: #E0801A;
+    font-size: 48px;
+}
+
+.des-cocktails {
+    font-style: normal;
+    font-size: 21px;
+}
+
+.calendrier {
+    text-align: center;
+}
+
+.calendar {
+    color: #E0801A;
+    font-size: 48px;
+}
+
+.des-events {
+    font-style: normal;
+    font-size: 21px;
+}
+
+.cocher {
+    text-align: center;
+}
+
+.checked {
+    color: #E0801A;
+    font-size: 48px;
+}
+
+.du-fun {
+    font-style: normal;
+    font-size: 21px;
+}
+
+
+
+.partie-notre-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.div-gauche-notre-bar {
+    width: 15%;
+}
+
+.div-droite-notre-bar {
+    width: 15%;
+}
+
+.notre-bar {
+    color: white;
+    width: 70%;
+}
+
+@font-face {
+    font-family: 'Montserrat Regular';
+    font-weight: 400;
+    src: url(‘/gaminger/fonts/Montserrat-Regular.ttf’) format(‘truetype’);
+}
+
+@font-face {
+    font-family: 'Montserrat SemiBold';
+    font-weight: 400;
+    src: url(‘/gaminger/fonts/Montserrat-SemiBold.ttf’) format(‘truetype’);
+}
+
+.notre-bar h2 {
+    font-family: Montserrat SemiBold;
+    margin-top: 115px;
+    font-size: 42px;
+}
+
+.en-images {
+    font-family: Montserrat;
+    color: #E0801A;
+}
+
+.bar-img1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bar-img1>img {
+    width: 400px;
+}
+
+.bar-img2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bar-img2>img {
+    width: 400px;
+}
+
+
+
+
+
+
+
+.footer>div {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: center;
+    color: white;
+    align-items: center;
+}
+
+.footer>div>div>a {
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+    color: white;
+    align-items: center;
+    text-decoration: none;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 15px;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.div-droite-footer>a>i {
+    display: flex;
+    width: 100%;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 24px;
+}
+
+.end-footer {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+
+.logo2 {
+    width: 100px;
+    height: auto;
+    padding-left: 4rem;
+}
+
+.logo-footer {
+    width: 100%;
+}
+
+.footer-global {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #505050;
+    align-items: center;
+}
+
+.div-gauche-footer {
+    display: flex;
+    width: 20%;
+}
+
+.div-droite-footer {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    list-style-type: none;
+}
+
+.twitter {
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    font-size: 21px;
+    padding-bottom: 10px;
+}
+
+.insta {
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    font-size: 21px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 60%;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.texte-footer {
+    margin-bottom: 30px;
+}

@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Montserrat Regular;
+    background-color: #323232;
+}
+
+.menu {
+    display: flex;
+    padding: 0;
+    background-color: #505050;
+    justify-content: center;
+}
+
+.menu li {
+    list-style-type: none;
+    width: 20%;
+}
+
+.menu a {
+    display: block;
+    min-width: 120px;
+    margin: 1.5rem;
+    padding: 1rem 0;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    line-height: 25px;
+}
+
+.menu a:hover {
+    color: #EFC09A;
+}
+
+.menu a.actif {
+    color: #EFC09A;
+}
+
+.menu a:hover.actif {
+    color: #EFC09A;
+}
+
+.logo {
+    height: auto;
+    width: 40%;
+    padding-left: 4rem;
+}
+
+.nos-menus {
+    color: white;
+}
+
+.nos-menus h2 {
+    font-family: Montserrat SemiBold;
+    padding-left: 262px;
+    margin-top: 20px;
+    font-size: 42px;
+}
+
+.nos-menus p {
+    padding-left: 262px;
+    padding-right: 262px;
+    padding-top: 50px;
+}
+
+.perso-cocktail {
+    color: white;
+}
+
+.perso-cocktail h2 {
+    font-family: Montserrat SemiBold;
+    padding-left: 262px;
+    margin-top: 20px;
+    font-size: 42px;
+}
+
+.perso-cocktail p {
+    padding-left: 262px;
+    padding-right: 262px;
+    padding-top: 50px;
+}
+
+hr {
+    height:1px;
+    background-color: white;
+    width:65%;
+    margin:1px;
+    border:none;
+    margin:auto;
+}
+
+.composition {
+    padding-left: 262px;
+}
+
+.compo1 {
+    color: white;
+    width: 300px;
+    border-style: solid;
+    border-color: #E59154;
+    background-color: transparent;
+    font-size: 13px;
+    padding: 25px;
+    margin-right: 35px;
+    font-family: Montserrat Regular;
+    box-shadow: 1px 1px 5px 1px #E59154;
+    border-width: 3px;
+    text-decoration: none;
+}
+
+.compo1::placeholder {
+    color: #ADADAD;
+}
+
+.compo2 {
+    color: white;
+    width: 500px;
+    max-width: 500px;
+    min-width: 500px;
+    height: 110px;
+    border-style: solid;
+    border-color: #E59154;
+    background-color: transparent;
+    font-size: 13px;
+    padding: 25px;
+    margin-right: 35px;
+    font-family: Montserrat Regular;
+    box-shadow: 1px 1px 5px 1px #E59154;
+    border-width: 3px;
+    text-decoration: none;
+}
+
+.compo2::placeholder {
+    color: #ADADAD;
+}
+
+.compo3 {
+    color: white;
+    width: 200px;
+    border-style: solid;
+    border-color: #E59154;
+    background-color: transparent;
+    font-size: 13px;
+    padding: 25px;
+    margin-right: 35px;
+    font-family: Montserrat Regular;
+    box-shadow: 1px 1px 5px 1px #E59154;
+    border-width: 3px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+.footer {
+    display: flex;
+    padding: 0;
+    background-color: #505050;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.footer>div {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: center;
+    color: white;
+    align-items: center;
+}
+
+.footer>div>div>a {
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+    color: white;
+    align-items: center;
+    text-decoration: none;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 15px;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.footer>div>div>a>i {
+    display: flex;
+    width: 100%;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 24px;
+}
+
+.end-footer {
+    color: white;
+    font-size: 12px;
+    background-color: #505050;
+    text-align: center;
+}
+
+.logo2 {
+    height: auto;
+    width: 20%;
+    padding-left: 4rem;
+}
