@@ -7,10 +7,10 @@
     <script src="https://kit.fontawesome.com/26e46cf4bd.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="shortcut icon" href="/gaminger/public/css/imgs/Logo-GGr-icon.ico" />
+    <link rel="shortcut icon" href="/css/imgs/Logo-GGr-icon.ico" />
     <title>Gaminger - Accueil</title>
-    <link rel="stylesheet" href="/gaminger/public/css/accueil.css">
-    <link href="/gaminger/public/fontawesome-free" rel="stylesheet">
+    <link rel="stylesheet" href="/css/accueil.css">
+    <link href="/fontawesome-free" rel="stylesheet">
 
 </head>
 
@@ -21,7 +21,7 @@
     <ul class="menu">
         <li>
             <div class="logo">
-                <img class="logo-header" src="/gaminger/public/css/imgs/Logo-GGr.png"></img>
+                <img class="logo-header" src="/css/imgs/Logo-GGr.png"></img>
             </div>
         </li>
         <li>
@@ -112,12 +112,12 @@
         <div class="notre-bar">
             <h2>Notre bar <strong class="en-images">en images</strong></h2><br><br>
             <div class="bar-img1">
-                <img class="img1" src="/gaminger/public/css/imgs/img1.jpg"></img>
-                <img class="img2" src="/gaminger/public/css/imgs/img2.jpg"></img>
+                <img class="img1" src="/css/imgs/img1.jpg"></img>
+                <img class="img2" src="/css/imgs/img2.jpg"></img>
             </div><br>
             <div class="bar-img2">
-                <img class="img3" src="/gaminger/public/css/imgs/img3.jpg"></img>
-                <img class="img4" src="/gaminger/public/css/imgs/img4.jpg"></img>
+                <img class="img3" src="/css/imgs/img3.jpg"></img>
+                <img class="img4" src="/css/imgs/img4.jpg"></img>
             </div>
         </div>
 
@@ -131,7 +131,7 @@
     <div class="footer-global">
         <div class="div-gauche-footer">
             <div class="logo2">
-                <img class="logo-footer" src="/gaminger/public/css/imgs/Logo-GGr-2.png"></img>
+                <img class="logo-footer" src="/css/imgs/Logo-GGr-2.png"></img>
             </div>
         </div>
 

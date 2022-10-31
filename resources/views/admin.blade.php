@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/26e46cf4bd.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="/gaminger/public/css/imgs/Logo-GGr-icon.ico"/>
+    <link rel="shortcut icon" href="/css/imgs/Logo-GGr-icon.ico"/>
     <title>Gaminger - Connexion Admin</title>
-    <link rel="stylesheet" href="/gaminger/public/css/admin.css">
-    <link href="/gaminger/public/fontawesome-free" rel="stylesheet">
+    <link rel="stylesheet" href="/css/admin.css">
+    <link href="/fontawesome-free" rel="stylesheet">
 
 </head>
 
@@ -16,7 +16,7 @@
 
     <ul class="menu">
         <li>
-            <img class="logo" src="/gaminger/public/css/imgs/Logo-GGr.png"></img>
+            <img class="logo" src="/css/imgs/Logo-GGr.png"></img>
         </li>
         <li>
             <a href="accueil">Accueil</a>
@@ -67,7 +67,7 @@
 
     <div class="footer">
         <div>
-            <img class="logo2" src="/gaminger/public/css/imgs/Logo-GGr.png"></img>
+            <img class="logo2" src="/css/imgs/Logo-GGr.png"></img>
         </div>
         <div class="texte">
             <div>

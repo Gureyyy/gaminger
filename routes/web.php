@@ -17,22 +17,22 @@ Route::get('/', function () {
     return view('accueil');
 });
 
-Route::get('gaminger/public/accueil', function () {
+Route::get('/accueil', function () {
     return view('accueil');
 });
 
-Route::get('gaminger/public/cocktails', function () {
+Route::get('/cocktails', function () {
     return view('cocktails');
 });
 
-Route::get('gaminger/public/events', function () {
+Route::get('/events', function () {
     return view('events');
 });
 
-Route::get('gaminger/public/contact', function () {
+Route::get('/contact', function () {
     return view('contact');
 });
 
-Route::get('gaminger/public/admin', function () {
+Route::get('/admin', function () {
     return view('admin');
 });
