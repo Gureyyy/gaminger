@@ -7,10 +7,10 @@
     <script src="https://kit.fontawesome.com/26e46cf4bd.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="shortcut icon" href="/gaminger/resources/css/imgs/Logo-GGr-icon.ico" />
+    <link rel="shortcut icon" href="/gaminger/public/css/imgs/Logo-GGr-icon.ico" />
     <title>Gaminger - Accueil</title>
-    <link rel="stylesheet" href="/gaminger/resources/css/accueil.css">
-    <link href="/gaminger/resources/fontawesome-free" rel="stylesheet">
+    <link rel="stylesheet" href="/gaminger/public/css/accueil.css">
+    <link href="/gaminger/public/fontawesome-free" rel="stylesheet">
 
 </head>
 
@@ -21,7 +21,7 @@
     <ul class="menu">
         <li>
             <div class="logo">
-                <img class="logo-header" src="/gaminger/resources/css/imgs/Logo-GGr.png"></img>
+                <img class="logo-header" src="/gaminger/public/css/imgs/Logo-GGr.png"></img>
             </div>
         </li>
         <li>
@@ -131,7 +131,7 @@
     <div class="footer-global">
         <div class="div-gauche-footer">
             <div class="logo2">
-                <img class="logo-footer" src="/gaminger/resources/css/imgs/Logo-GGr-2.png"></img>
+                <img class="logo-footer" src="/gaminger/public/css/imgs/Logo-GGr-2.png"></img>
             </div>
         </div>
 
