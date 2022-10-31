@@ -36,3 +36,7 @@ Route::get('/contact', function () {
 Route::get('/admin', function () {
     return view('admin');
 });
+Route::post('/administrateur', 'Authentication@connect');
+Route::get('/administrateur', function (){
+    return view('administrateur');
+});

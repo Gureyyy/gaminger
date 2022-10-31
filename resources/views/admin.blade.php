@@ -35,28 +35,28 @@
         </li>
     </ul>
 
-    <form class="admin-connect">
+    <form action="/administrateur" ACTION="POST" class="admin-connect">
         <div class="admin-box">
             <div>
                 <h2 class="titre-connect">Administrateur</h2>
             </div>
             <div>
-                <div class="login-texte">
-                    <label>Utilisateur :</label><br>
+                    <div class="login-texte">
+                        <label>Utilisateur :</label><br>
+                    </div>
+                    <input type="text" name="login" class="user" placeholder="Utilisateur">
                 </div>
-                <input type="text" class="user" placeholder="Utilisateur">
-            </div>
 
-            <div>
-                <div class="mdp-texte">
-                    <label class="mdp-texte">Mot de passe :</label><br>
+                <div>
+                    <div class="mdp-texte">
+                        <label class="mdp-texte">Mot de passe :</label><br>
+                    </div>
+                    <input type="password" name="password" class="mdp" placeholder="Mot de passe">
                 </div>
-                <input type="password" class="mdp" placeholder="Mot de passe">
+                <div class="send">
+                    <input type="submit" class="connect" type="submit" value="Connexion"></input>
+                </div>
             </div>
-            <div class="send">
-                <input class="connect" type="submit" value="Connexion"></input>
-            </div>
-        </div>
 
     </form>
 

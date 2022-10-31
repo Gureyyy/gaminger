@@ -61,7 +61,7 @@ body {
 }
 
 .banner {
-    background-image: url('/gaminger/resources/css/imgs/banner-site.jpg');
+    background-image: url('/css/imgs/banner-site.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
