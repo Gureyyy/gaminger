@@ -36,6 +36,23 @@ Route::get('/contact', function () {
 Route::get('/admin', function () {
     return view('admin');
 });
+
+Route::get('/createCocktail', function () {
+    return view('createCocktail');
+});
+
+Route::get('/editCocktail', function () {
+    return view('editCocktail');
+});
+
+Route::get('/createEvent', function () {
+    return view('createEvent');
+});
+
+Route::get('/editEvent', function () {
+    return view('editEvent');
+});
+
 Route::post('/administrateur', 'Authentication@connect');
 Route::get('/administrateur', function (){
     return view('administrateur');

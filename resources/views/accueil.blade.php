@@ -21,7 +21,7 @@
     <ul class="menu">
         <li>
             <div class="logo">
-                <img class="logo-header" src="/css/imgs/Logo-GGr.png"></img>
+                <img class="logo-header" src="/css/imgs/Logo-GGr.png" href="/accueil"></img>
             </div>
         </li>
         <li>
@@ -48,11 +48,10 @@
         <h1 class="gaminger-titre">Gaminger</h1>
         <h1>Bar événementiel gaming</h1>
         <div class="banner-boutons">
-            <a href="">Nos cocktails</a>
-            <a href="">Nos événements</a>
+            <a href="/cocktails">Nos cocktails</a>
+            <a href="/events">Nos événements</a>
         </div>
     </div>
-
 
     <div class="partie-a-propos">
         <div class="div-gauche-a-propos">
