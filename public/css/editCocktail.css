@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Montserrat Regular;
+    background-color: #323232;
+}
+
+.partie-edit {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.div-gauche-edit {
+    width: 15%;
+}
+
+.div-droite-edit {
+    width: 15%;
+}
+
+.edit {
+    color: white;
+    width: 70%;
+}
+
+.edit h2 {
+    font-family: Montserrat SemiBold;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    font-size: 36px;
+    color: #E59154;
+}
+
+.composition {
+    padding-left: 262px;
+}
+
+.image-cocktail {
+    color: #ADADAD;
+    width: 300px;
+    border-style: solid;
+    border-color: #E59154;
+    background-color: transparent;
+    font-size: 13px;
+    padding: 25px;
+    margin-right: 35px;
+    font-family: Montserrat Regular;
+    box-shadow: 1px 1px 5px 1px #E59154;
+    border-width: 3px;
+    text-decoration: none;
+}
+
+.titre-cocktail {
+    color: white;
+    width: 300px;
+    border-style: solid;
+    border-color: #E59154;
+    background-color: transparent;
+    font-size: 13px;
+    padding: 25px;
+    margin-right: 35px;
+    font-family: Montserrat Regular;
+    box-shadow: 1px 1px 5px 1px #E59154;
+    border-width: 3px;
+    text-decoration: none;
+}
+
+.titre-cocktail::placeholder {
+    color: #ADADAD;
+}
+
+.prix-cocktail {
+    color: white;
+    width: 300px;
+    border-style: solid;
+    border-color: #E59154;
+    background-color: transparent;
+    font-size: 13px;
+    padding: 25px;
+    margin-right: 35px;
+    font-family: Montserrat Regular;
+    box-shadow: 1px 1px 5px 1px #E59154;
+    border-width: 3px;
+    text-decoration: none;
+}
+
+.prix-cocktail::placeholder {
+    color: #ADADAD;
+}
+
+.description-cocktail {
+    color: white;
+    width: 500px;
+    max-width: 500px;
+    min-width: 500px;
+    height: 110px;
+    border-style: solid;
+    border-color: #E59154;
+    background-color: transparent;
+    font-size: 13px;
+    padding: 25px;
+    margin-right: 35px;
+    font-family: Montserrat Regular;
+    box-shadow: 1px 1px 5px 1px #E59154;
+    border-width: 3px;
+    text-decoration: none;
+}
+
+.description-cocktail::placeholder {
+    color: #ADADAD;
+}
+
+.ajouter {
+    color: white;
+    width: 200px;
+    border-style: solid;
+    border-color: #E59154;
+    background-color: transparent;
+    font-size: 13px;
+    padding: 25px;
+    margin-right: 35px;
+    font-family: Montserrat Regular;
+    box-shadow: 1px 1px 5px 1px #E59154;
+    border-width: 3px;
+    text-decoration: none;
+    font-weight: bold;
+}

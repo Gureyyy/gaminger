@@ -66,6 +66,19 @@ body {
     padding-top: 50px;
 }
 
+.nos-cocktails {
+    color: white;
+}
+.nos-cocktails p {
+    padding-left: 262px;
+    padding-right: 262px;
+}
+
+.img-cocktail {
+    width: auto;
+    height: 250px;
+}
+
 .perso-cocktail {
     color: white;
 }

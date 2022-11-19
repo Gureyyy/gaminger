@@ -21,9 +21,7 @@ Route::get('/accueil', function () {
     return view('accueil');
 });
 
-Route::get('/cocktails', function () {
-    return view('cocktails');
-});
+Route::get('/cocktails', 'CocktailController@getAllCocktails');
 
 Route::get('/events', function () {
     return view('events');
@@ -41,9 +39,15 @@ Route::get('/createCocktail', function () {
     return view('createCocktail');
 });
 
+Route::post('/administrateur/createCocktail', 'CocktailController@createCocktail');
+
+Route::get('/deleteCocktail/{id}', 'CocktailController@deleteCocktail');
+
 Route::get('/editCocktail', function () {
     return view('editCocktail');
 });
+
+Route::get('/administrateur/editCocktail/{id}', 'CocktailController@editCocktail');
 
 Route::get('/createEvent', function () {
     return view('createEvent');

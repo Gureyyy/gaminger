@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Montserrat Regular;
+    background-color: #323232;
+}
+
+.partie-admin {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.div-gauche-admin {
+    width: 15%;
+}
+
+.div-droite-admin {
+    width: 15%;
+}
+
+.admin {
+    color: white;
+    width: 70%;
+}
+
+.admin h2 {
+    font-family: Montserrat SemiBold;
+    margin-top: 70px;
+    font-size: 36px;
+    color: #E59154;
+}
+
+.admin h3 {
+    font-family: Montserrat SemiBold;
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.admin-boutons {
+    text-align: center;
+    height: 60px;
+    margin-top: 10px;
+    padding-top: 55px;
+    padding-bottom: 25px;
+}
+
+.admin-boutons>a {
+    color: white;
+    border-style: solid;
+    border-color: #E59154;
+    background-color: transparent;
+    font-size: 18px;
+    margin-right: 5px;
+    padding: 15px;
+    text-decoration: none;
+}
