@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CocktailController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,12 +33,30 @@ Route::get('/contact', function () {
 });
 
 Route::get('/admin', function () {
-    return view('admin');
+    session_start();
+    if(isset($_SESSION['login'])){
+    return redirect('/administrateur');
+    }
+    else{
+        return view('admin');
+    }
 });
 
-Route::get('/createCocktail', function () {
-    return view('createCocktail');
+Route::get('/administrateur/createCocktail', function () {
+    session_start();
+    if(isset($_SESSION['login'])){
+        return view('createCocktail');
+    }
+    else{
+        return redirect('/');
+    }
 });
+
+Route::get('/administrateur/cocktail/delete/{id}', 'CocktailController@deleteCocktail');
+
+Route::get('/administrateur/cocktail/{id}', 'CocktailController@getCocktailById');
+
+Route::post('/administrateur/editCocktail', 'CocktailController@editCocktail');
 
 Route::post('/administrateur/createCocktail', 'CocktailController@createCocktail');
 
@@ -46,18 +65,25 @@ Route::get('/deleteCocktail/{id}', 'CocktailController@deleteCocktail');
 Route::get('/editCocktail', function () {
     return view('editCocktail');
 });
+Route::get('/administrateur/listCocktails', 'CocktailController@getAllCocktailsForEdit');
 
-Route::get('/administrateur/editCocktail/{id}', 'CocktailController@editCocktail');
-
-Route::get('/createEvent', function () {
+Route::get('/administrateur/createEvent', function () {
     return view('createEvent');
 });
 
-Route::get('/editEvent', function () {
+Route::get('/administrateur/editEvent', function () {
     return view('editEvent');
 });
 
-Route::post('/administrateur', 'Authentication@connect');
+Route::post('/administrateur', 'AuthenticationController@connect');
 Route::get('/administrateur', function (){
-    return view('administrateur');
+    session_start();
+    if(isset($_SESSION['login'])){
+        return view('administrateur');
+    }
+    else{
+       return redirect('/');
+}
 });
+
+Route::get('logout','AuthenticationController@logout');

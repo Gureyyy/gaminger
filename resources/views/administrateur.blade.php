@@ -21,14 +21,17 @@
             <h2>Espace - Administrateur</h2>
             <h3>Faites vos modifications :</h3>
             <div class="admin-boutons">
-                <a href="editCocktail">Modifier les cocktails</a>
-                <a href="createCocktail">Ajouter un cocktail</a>
-                <a href="editEvent">Modifier les événements</a>
-                <a href="createEvent">Ajouter un événement</a>
-            </div>
+                <a href="/administrateur/listCocktails">Modifier les cocktails</a>
+                <a href="/administrateur/createCocktail">Ajouter un cocktail</a>
+                <a href="/administrateur/editEvent">Modifier les événements</a>
+                <a href="/administrateur/createEvent">Ajouter un événement</a>
+            </div><br>
+            <a href="/logout">
+                <button class="deconnect">Déconnexion</button>
+            </a>
         </div>
 
-        <div class="div-droite-admin">
+        <div class="div-droite-admin"></div>
         </div>
     </div>
 

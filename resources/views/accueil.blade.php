@@ -17,8 +17,8 @@
 
 <body>
 
-
     <ul class="menu">
+        <div class="gauche-menu"></div>
         <li>
             <div class="logo">
                 <img class="logo-header" src="/css/imgs/Logo-GGr.png" href="/accueil"></img>
@@ -36,13 +36,14 @@
         <li>
             <a href="contact">Contact</a>
         </li>
+        <div class="droite-menu">
         <li>
             <a href="admin">
                 <i class="fa-solid fa-user" style="color: white;"></i>
             </a>
         </li>
+        </div>
     </ul>
-
 
     <div class="banner">
         <h1 class="gaminger-titre">Gaminger</h1>
@@ -72,7 +73,6 @@
         <div class="div-droite-a-propos">
         </div>
     </div>
-
 
     <div class="partie-nos-services">
         <div class="div-gauche-nos-services">

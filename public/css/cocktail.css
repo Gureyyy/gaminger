@@ -51,58 +51,59 @@ body {
 
 .nos-menus {
     color: white;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .nos-menus h2 {
     font-family: Montserrat SemiBold;
-    padding-left: 262px;
-    margin-top: 20px;
+    /*padding-left: 262px;
+    margin-top: 20px;*/
     font-size: 42px;
 }
 
-.nos-menus p {
+/*.nos-menus p {
     padding-left: 262px;
     padding-right: 262px;
     padding-top: 50px;
-}
+}*/
+
 
 .nos-cocktails {
     color: white;
-}
-.nos-cocktails p {
-    padding-left: 262px;
-    padding-right: 262px;
+    align-items: flex-start;
 }
 
-.img-cocktail {
+img {
     width: auto;
     height: 250px;
+    display: block;
 }
 
 .perso-cocktail {
     color: white;
 }
 
-.perso-cocktail h2 {
+.perso-cocktail>h2 {
     font-family: Montserrat SemiBold;
     padding-left: 262px;
     margin-top: 20px;
     font-size: 42px;
 }
 
-.perso-cocktail p {
+.perso-cocktail>p {
     padding-left: 262px;
     padding-right: 262px;
     padding-top: 50px;
 }
 
 hr {
-    height:1px;
+    height: 1px;
     background-color: white;
-    width:65%;
-    margin:1px;
-    border:none;
-    margin:auto;
+    width: 65%;
+    margin: 1px;
+    border: none;
+    margin: auto;
 }
 
 .composition {
@@ -119,7 +120,6 @@ hr {
     padding: 25px;
     margin-right: 35px;
     font-family: Montserrat Regular;
-    box-shadow: 1px 1px 5px 1px #E59154;
     border-width: 3px;
     text-decoration: none;
 }
@@ -141,7 +141,6 @@ hr {
     padding: 25px;
     margin-right: 35px;
     font-family: Montserrat Regular;
-    box-shadow: 1px 1px 5px 1px #E59154;
     border-width: 3px;
     text-decoration: none;
 }
@@ -160,11 +159,18 @@ hr {
     padding: 25px;
     margin-right: 35px;
     font-family: Montserrat Regular;
-    box-shadow: 1px 1px 5px 1px #E59154;
     border-width: 3px;
     text-decoration: none;
     font-weight: bold;
+    cursor: pointer;
 }
+
+.compo3:hover {
+    color: white;
+    background-color: #e59154;
+    transition: 0.5s;
+}
+
 
 
 

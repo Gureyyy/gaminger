@@ -35,7 +35,8 @@
         </li>
     </ul>
 
-    <form action="/administrateur" ACTION="POST" class="admin-connect">
+    <form action="/administrateur" method="POST" class="admin-connect">
+        @csrf
         <div class="admin-box">
             <div>
                 <h2 class="titre-connect">Administrateur</h2>

@@ -19,13 +19,18 @@
             <h2>Modifier un cocktail :</h2>
         </div>
         <div class="formulaire">
-            <form class="composition">
-                <input class="image-cocktail" type="file" name="picture-cocktail"></input><br><br>
-                <input class="titre-cocktail" type="text" placeholder="Nom du cocktail..."></input><br><br>
-                <input class="prix-cocktail" type="number" name="price" placeholder="Prix du cocktail..."></input><br><br>
-                <textarea class="description-cocktail" placeholder="Description du cocktail..."></textarea><br><br>
-                <input class="ajouter" type="submit" value="Envoyer"></input>
+            <form class="composition" action="/administrateur/editCocktail" enctype="multipart/form-data" method="POST" >
+                @csrf
+                <input type="hidden" value="{{$cocktail['id']}}" name="id" />
+                <input class="image-cocktail" type="file" name="image"></input><br><br>
+                <input class="titre-cocktail" value="{{$cocktail['name']}}" type="text" name="name" placeholder="Nom du cocktail..."></input><br><br>
+                <input class="prix-cocktail" type="number" value="{{$cocktail['price']}}" name="price" placeholder="Prix du cocktail..." step="0.01"></input><br><br>
+                <textarea class="description-cocktail" name="description" placeholder="Description du cocktail...">{{$cocktail['desc']}}</textarea><br><br>
+                <input class="ajouter" type="submit" value="Enregistrer"></input><br>
             </form>
+            <a href="/administrateur/listCocktails">
+                <button class="retour" type="button">Retour</button>
+            </a>
         </div>
 
         <div class="div-droite-edit">

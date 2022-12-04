@@ -15,4 +15,15 @@ use Illuminate\Database\Eloquent\Model;
             return DB::table('cocktail')->get('*');
         }
 
+        public static function deleteCocktail($id){
+            return DB::table('cocktail')->delete($id);
+        }
+
+        public static function getCocktailById($id){
+            return DB::table('cocktail')->get('*')->where('id', $id);
+        }
+
+        public static function editCocktail($cocktail, $id){
+            return DB::table('cocktail')->where('id', $id)-> update($cocktail);
+        }
     }

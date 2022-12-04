@@ -73,7 +73,6 @@ body {
     padding: 25px;
     margin-right: 35px;
     font-family: Montserrat Regular;
-    box-shadow: 1px 1px 5px 1px #E59154;
     border-width: 3px;
     text-decoration: none;
 }
@@ -92,7 +91,6 @@ body {
     padding: 25px;
     margin-right: 35px;
     font-family: Montserrat Regular;
-    box-shadow: 1px 1px 5px 1px #E59154;
     border-width: 3px;
     text-decoration: none;
 }
@@ -116,7 +114,6 @@ body {
     padding: 25px;
     margin-right: 35px;
     font-family: Montserrat Regular;
-    box-shadow: 1px 1px 5px 1px #E59154;
     border-width: 3px;
     text-decoration: none;
 }
@@ -136,7 +133,6 @@ body {
     padding: 25px;
     margin-right: 35px;
     font-family: Montserrat Regular;
-    box-shadow: 1px 1px 5px 1px #E59154;
     border-width: 3px;
     text-decoration: none;
 }
@@ -166,7 +162,6 @@ body {
     padding: 25px;
     margin-right: 35px;
     font-family: Montserrat Regular;
-    box-shadow: 1px 1px 5px 1px #E59154;
     border-width: 3px;
     text-decoration: none;
 }
@@ -191,10 +186,16 @@ body {
     padding: 15px;
     margin-right: 35px;
     font-family: Montserrat Regular;
-    box-shadow: 1px 1px 5px 1px #E59154;
     border-width: 3px;
     text-decoration: none;
     font-weight: bold;
+}
+
+.envoyer:hover {
+    color: white;
+    background-color: #e59154;
+    transition:0.5s;
+    cursor: pointer;
 }
 
 hr {

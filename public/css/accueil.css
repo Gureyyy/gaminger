@@ -94,8 +94,13 @@ body {
     font-size: 18px;
     padding: 25px;
     margin-right: 35px;
-    box-shadow: 1px 1px 15px 1px #E59154;
     text-decoration: none;
+}
+
+.banner-boutons>a:hover {
+    color: white;
+    background-color: #e59154;
+    transition:0.5s;
 }
 
 .partie-a-propos {
@@ -125,11 +130,15 @@ body {
 
 .a-propos p {
     padding-top: 50px;
+    margin-bottom: 90px;
 }
 
 .nos-services {
     color: white;
     width: 70%;
+    background-color: #E59154;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 .partie-nos-services {
@@ -141,20 +150,22 @@ body {
 
 .div-gauche-nos-services {
     width: 15%;
+    background-color: #E59154;
 }
 
 .div-droite-nos-services {
     width: 15%;
+    background-color: #E59154;
 }
 
 .nos-services h2 {
     font-family: Montserrat SemiBold;
-    margin-top: 90px;
     font-size: 42px;
+    color: white;
 }
 
 .nos-services ul {
-    padding-top: 70px;
+    padding-top: 90px;
 }
 
 .nos-services li {
@@ -172,7 +183,7 @@ body {
 }
 
 .map {
-    color: #E0801A;
+    color: white;
     font-size: 48px;
 }
 
@@ -186,7 +197,7 @@ body {
 }
 
 .glass {
-    color: #E0801A;
+    color: white;
     font-size: 48px;
 }
 
@@ -200,7 +211,7 @@ body {
 }
 
 .calendar {
-    color: #E0801A;
+    color: white;
     font-size: 48px;
 }
 
@@ -214,7 +225,7 @@ body {
 }
 
 .checked {
-    color: #E0801A;
+    color: white;
     font-size: 48px;
 }
 
@@ -257,7 +268,7 @@ body {
 
 .notre-bar h2 {
     font-family: Montserrat SemiBold;
-    margin-top: 115px;
+    margin-top: 70px;
     font-size: 42px;
 }
 
