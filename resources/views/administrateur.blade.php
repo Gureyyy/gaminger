@@ -23,7 +23,7 @@
             <div class="admin-boutons">
                 <a href="/administrateur/listCocktails">Modifier les cocktails</a>
                 <a href="/administrateur/createCocktail">Ajouter un cocktail</a>
-                <a href="/administrateur/editEvent">Modifier les événements</a>
+                <a href="/administrateur/listEvent">Modifier les événements</a>
                 <a href="/administrateur/createEvent">Ajouter un événement</a>
             </div><br>
             <a href="/logout">

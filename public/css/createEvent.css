@@ -123,4 +123,30 @@ body {
     border-width: 3px;
     text-decoration: none;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.ajouter:hover {
+    color: white;
+    background-color: #e59154;
+    transition: 0.5s;
+}
+
+.retour {
+    color: white;
+    width: 100px;
+    border-style: solid;
+    border-color: #E59154;
+    background-color: #E59154;
+    font-size: 13px;
+    padding: 5px;
+    justify-content: center;
+    font-family: Montserrat Regular;
+    border-width: 3px;
+    text-decoration: none;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 25px;
+    margin-left: 31%;
+    margin-bottom: 25px;
+    cursor: pointer;
 }

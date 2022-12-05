@@ -53,16 +53,18 @@ body {
     color: white;
 }
 
+img {
+    width: auto;
+    max-height: 250px;
+}
+
 .nos-events h2 {
     font-family: Montserrat SemiBold;
-    padding-left: 262px;
     margin-top: 20px;
     font-size: 42px;
 }
 
 .nos-events p {
-    padding-left: 262px;
-    padding-right: 262px;
     padding-top: 50px;
 }
 
@@ -72,14 +74,11 @@ body {
 
 .perso-events h2 {
     font-family: Montserrat SemiBold;
-    padding-left: 262px;
     margin-top: 20px;
     font-size: 42px;
 }
 
 .perso-events p {
-    padding-left: 262px;
-    padding-right: 262px;
     padding-top: 50px;
 }
 
@@ -157,9 +156,6 @@ hr {
     transition:0.5s;
     cursor: pointer;
 }
-
-
-
 
 
 .footer {

@@ -19,13 +19,17 @@
             <h2>Ajouter un événement :</h2>
         </div>
         <div class="formulaire">
-            <form class="composition">
-                <input class="image-event" type="file" name="picture-event"></input><br><br>
-                <input class="titre-event" type="text" placeholder="Nom de l'événement..."></input><br><br>
-                <input class="date-event" type="date" name="date"></input><br><br>
-                <textarea class="description-event" placeholder="Description de l'événement..."></textarea><br><br>
+            <form class="composition" action="/administrateur/createEvent" method="POST" enctype="multipart/form-data">
+                @csrf
+                <input class="image-event" name="picture" type="file" name="picture-event"></input><br><br>
+                <input class="titre-event" name="nom" type="text" placeholder="Nom de l'événement..."></input><br><br>
+                <input class="date-event" name="date" type="date" name="date"></input><br><br>
+                <textarea class="description-event"  name="description" placeholder="Description de l'événement..."></textarea><br><br>
                 <input class="ajouter" type="submit" value="Envoyer"></input>
             </form>
+            <a href="/administrateur">
+                 <button class="retour" type="button">Retour</button>
+            </a>
         </div>
 
         <div class="div-droite-create">

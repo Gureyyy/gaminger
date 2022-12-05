@@ -45,7 +45,16 @@
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><br><br>
     </div>
-
+    @if (isset($events))
+                @foreach ($events as $event)
+                <div class="nos-events">
+                    <img src='uploads/{{$event -> image}}'><br>
+                    <p><span style="font-weight: bold">{{$event->nom}}</span>
+                    
+                    <br>{{$event->date}}
+                    <br>{{$event->description}}</p>
+                    @endforeach
+                    @endif
     <hr><br>
 
     <div class="perso-events">

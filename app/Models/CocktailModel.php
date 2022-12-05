@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Model;
         }
 
         public static function getAllCocktails(){
-            return DB::table('cocktail')->get('*');
+            return DB::table('cocktail')->orderBy('prix', 'asc')->get('*');
         }
 
         public static function deleteCocktail($id){

@@ -24,9 +24,7 @@ Route::get('/accueil', function () {
 
 Route::get('/cocktails', 'CocktailController@getAllCocktails');
 
-Route::get('/events', function () {
-    return view('events');
-});
+Route::get('/events', 'EventController@getAllEvents');
 
 Route::get('/contact', function () {
     return view('contact');
@@ -41,6 +39,8 @@ Route::get('/admin', function () {
         return view('admin');
     }
 });
+
+/////////////////// COCKTAIL's ROUTES ///////////////////
 
 Route::get('/administrateur/createCocktail', function () {
     session_start();
@@ -67,15 +67,8 @@ Route::get('/editCocktail', function () {
 });
 Route::get('/administrateur/listCocktails', 'CocktailController@getAllCocktailsForEdit');
 
-Route::get('/administrateur/createEvent', function () {
-    return view('createEvent');
-});
-
-Route::get('/administrateur/editEvent', function () {
-    return view('editEvent');
-});
-
 Route::post('/administrateur', 'AuthenticationController@connect');
+
 Route::get('/administrateur', function (){
     session_start();
     if(isset($_SESSION['login'])){
@@ -85,5 +78,39 @@ Route::get('/administrateur', function (){
        return redirect('/');
 }
 });
+
+///////////////////////EVENT's ROUTES///////////////////
+
+Route::get('/administrateur/editEvent', function () {
+    session_start();
+    if(isset($_SESSION['login'])){
+    return view('editEvent');
+    }
+    else{
+        return redirect('/');
+    }
+});
+
+Route::get('/administrateur/createEvent', function () {
+    session_start();
+    if(isset($_SESSION['login'])){
+        return view('createEvent');
+    }
+    else{
+        return redirect('/');
+    }
+});
+
+Route::post('/administrateur/createEvent', 'EventController@createEvent');
+
+Route::get('/administrateur/event/{id}', 'EventController@getEventById');
+
+Route::get('/administrateur/event/delete/{id}', 'EventController@deleteEvent');
+
+Route::get('/administrateur/events', 'EventController@getAlleventsForEdit');
+
+Route::get('/administrateur/listEvent', 'EventController@getAllEventsForEdit');
+
+Route::post('/administrateur/editEvent', 'EventController@editEvent');
 
 Route::get('logout','AuthenticationController@logout');

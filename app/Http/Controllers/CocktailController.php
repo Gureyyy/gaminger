@@ -22,7 +22,7 @@ class CocktailController
             $name = $_POST['name'];
             $desc = $_POST['description'];
             $price = $_POST['price'];
-            if (isset($_FILES['image']))
+            if (UPLOAD_ERR_OK === $_FILES["image"]["error"])
             {
                 $file = $_FILES['image']['tmp_name'];
                 $picture= $_FILES['image']['name'];
