@@ -26,7 +26,7 @@
                 <input class="titre-event" name="nom" type="text" value="{{$event['name']}}" placeholder="Nom de l'événement..."></input><br><br>
                 <input class="date-event" name="date" type="date" value="{{$event['date']}}" name="date"></input><br><br>
                 <textarea class="description-event" name="description" placeholder="Description de l'événement...">{{$event['desc']}}</textarea><br><br>
-                <input class="ajouter" type="submit" value="Envoyer"></input>
+                <input class="ajouter" type="submit" value="Enregistrer"></input>
             </form>
             <a href="/administrateur">
                  <button class="retour" type="button">Retour</button>
