@@ -51,131 +51,35 @@ body {
 
 .nos-menus {
     color: white;
-    width: 100%;
-    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    text-align: center;
 }
 
-.nos-menus h2 {
+.titre {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.titre>h2 {
     font-family: Montserrat SemiBold;
-    /*padding-left: 262px;
-    margin-top: 20px;*/
     font-size: 42px;
+    color: white;
 }
-
-/*.nos-menus p {
-    padding-left: 262px;
-    padding-right: 262px;
-    padding-top: 50px;
-}*/
-
 
 .nos-cocktails {
     color: white;
-    align-items: flex-start;
+    flex: 1 0 33%;
+    margin-bottom: 50px;
+    justify-content: center;
 }
 
-img {
+.nos-cocktails>img {
     width: auto;
     height: 250px;
-    display: block;
 }
-
-.perso-cocktail {
-    color: white;
-}
-
-.perso-cocktail>h2 {
-    font-family: Montserrat SemiBold;
-    padding-left: 262px;
-    margin-top: 20px;
-    font-size: 42px;
-}
-
-.perso-cocktail>p {
-    padding-left: 262px;
-    padding-right: 262px;
-    padding-top: 50px;
-}
-
-hr {
-    height: 1px;
-    background-color: white;
-    width: 65%;
-    margin: 1px;
-    border: none;
-    margin: auto;
-}
-
-.composition {
-    padding-left: 262px;
-}
-
-.compo1 {
-    color: white;
-    width: 300px;
-    border-style: solid;
-    border-color: #E59154;
-    background-color: transparent;
-    font-size: 13px;
-    padding: 25px;
-    margin-right: 35px;
-    font-family: Montserrat Regular;
-    border-width: 3px;
-    text-decoration: none;
-}
-
-.compo1::placeholder {
-    color: #ADADAD;
-}
-
-.compo2 {
-    color: white;
-    width: 500px;
-    max-width: 500px;
-    min-width: 500px;
-    height: 110px;
-    border-style: solid;
-    border-color: #E59154;
-    background-color: transparent;
-    font-size: 13px;
-    padding: 25px;
-    margin-right: 35px;
-    font-family: Montserrat Regular;
-    border-width: 3px;
-    text-decoration: none;
-}
-
-.compo2::placeholder {
-    color: #ADADAD;
-}
-
-.compo3 {
-    color: white;
-    width: 200px;
-    border-style: solid;
-    border-color: #E59154;
-    background-color: transparent;
-    font-size: 13px;
-    padding: 25px;
-    margin-right: 35px;
-    font-family: Montserrat Regular;
-    border-width: 3px;
-    text-decoration: none;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.compo3:hover {
-    color: white;
-    background-color: #e59154;
-    transition: 0.5s;
-}
-
-
-
-
-
-
 
 
 .footer {

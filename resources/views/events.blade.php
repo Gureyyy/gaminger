@@ -7,7 +7,7 @@
     <script src="https://kit.fontawesome.com/26e46cf4bd.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="shortcut icon" href="/css/imgs/Logo-GGr-icon.ico"/>
+    <link rel="shortcut icon" href="/css/imgs/Logo-GGr-icon.ico" />
     <title>Gaminger - Nos événements</title>
     <link rel="stylesheet" href="/css/event.css">
     <link href="/fontawesome-free" rel="stylesheet">
@@ -37,36 +37,32 @@
                 <i class="fa-solid fa-user" style="color: white;"></i>
             </a>
         </li>
-    </ul><br><br>
+    </ul>
+
+    <div>
+        <div class="titre">
+            <h2>Nos événements</h2>
+        </div>
+    </div>
 
     <div class="nos-events">
-        <h2>Nos événements</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><br><br>
-    </div>
-    @if (isset($events))
-                @foreach ($events as $event)
-                <div class="nos-events">
-                    <img src='uploads/{{$event -> image}}'><br>
-                    <p><span style="font-weight: bold">{{$event->nom}}</span>
-                    
-                    <br>{{$event->date}}
-                    <br>{{$event->description}}</p>
-                    @endforeach
-                    @endif
-    <hr><br>
 
-    <div class="perso-events">
-        <h2>"Propose nous ton idée !"</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><br><br>
+        @if (isset($events))
+        @foreach ($events as $event)
+        <div class="events">
+            <img src='uploads/{{$event -> image}}'><br><br>
+            <p><span style="font-weight: bold">{{$event->nom}}</span>
+
+                <br>{{$event->date}}
+                <br>{{$event->description}}
+            </p>
+        </div>
+        @endforeach
+        @else
+        <div>Aucun événement de créé</div>
+        @endelse
+        @endif
     </div>
-    <form class="idee">
-        <input class="idee1" type="text" placeholder="Nom de votre événement..."></input><br><br>
-        <textarea class="idee2" placeholder="Votre idée d'événement..."></textarea><br><br>
-        <input class="idee3" type="submit" value="Envoyer"></input>
-    </form><br><br><br>
 
     <div class="footer">
         <div>

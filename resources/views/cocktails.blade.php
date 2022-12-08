@@ -37,37 +37,30 @@
                 <i class="fa-solid fa-user" style="color: white;"></i>
             </a>
         </li>
-    </ul><br><br>
+    </ul>
 
-    <div class="nos-menus">
+    <div>
+        <div class="titre">
             <h2>Nos cocktails</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><br><br>
-                @if (isset($cocktails))
-                @foreach ($cocktails as $cocktail)
-                <div class="nos-cocktails">
-                    <img class="img-cocktail" src='uploads/{{$cocktail -> image}}'><br>
-                    <p><span style="font-weight: bold">{{$cocktail->nom}}</span>
-                    
-                    <br>{{$cocktail->prix}} &euro;
-                    <br>{{$cocktail->description}}</p>
-                    @endforeach
-                    @endif
-                </div>
+        </div>
     </div>
-    <hr><br>
+    <div class="nos-menus">
+        @if (isset($cocktails))
+        @foreach ($cocktails as $cocktail)
+        <div class="nos-cocktails">
+            <img class="img-cocktail" src='/uploads/{{$cocktail -> image}}'><br><br>
+            <p class="details"><span style="font-weight: bold">{{$cocktail->nom}}</span>
 
-    <div class="perso-cocktail">
-        <h2>"Crée ton cocktail !"</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><br><br>
+                <br>{{$cocktail->prix}} &euro;
+                <br>{{$cocktail->description}}
+            </p>
+        </div>
+        @endforeach
+        @else
+        <div>Aucun cocktail de créé</div>
+        @endelse
+        @endif
     </div>
-    <form class="composition">
-        <input class="compo1" type="text" placeholder="Nom de votre cocktail..."></input><br><br>
-        <textarea class="compo2" placeholder="Votre idée de composition..."></textarea><br><br>
-        <input class="compo3" type="submit" value="Envoyer"></input>
-    </form><br><br><br>
 
     <div class="footer">
         <div>

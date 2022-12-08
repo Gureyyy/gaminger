@@ -49,9 +49,10 @@ body {
     padding-left: 4rem;
 }
 
+
 .titre {
     font-family: Montserrat SemiBold;
-    padding-left: 262px;
+    text-align: center;
     margin-top: 20px;
     font-size: 42px;
     color: white;
@@ -71,7 +72,7 @@ body {
     background-color: transparent;
     font-size: 13px;
     padding: 25px;
-    margin-right: 35px;
+    margin-right: 15px;
     font-family: Montserrat Regular;
     border-width: 3px;
     text-decoration: none;
@@ -89,7 +90,6 @@ body {
     background-color: transparent;
     font-size: 13px;
     padding: 25px;
-    margin-right: 35px;
     font-family: Montserrat Regular;
     border-width: 3px;
     text-decoration: none;
@@ -112,7 +112,7 @@ body {
     border-color: #E59154;
     background-color: transparent;
     padding: 25px;
-    margin-right: 35px;
+    margin-right: 15px;
     font-family: Montserrat Regular;
     border-width: 3px;
     text-decoration: none;
@@ -131,7 +131,6 @@ body {
     background-color: transparent;
     font-size: 13px;
     padding: 25px;
-    margin-right: 35px;
     font-family: Montserrat Regular;
     border-width: 3px;
     text-decoration: none;
@@ -149,18 +148,14 @@ body {
 
 .message {
     color: white;
-    width: 895px;
-    max-width: 895px;
-    min-width: 895px;
+    width: 870px;
+    min-width: 400px;
     height: 220px;
-    min-height: 220px;
-    max-height: 220px;
     border-style: solid;
     border-color: #E59154;
     background-color: transparent;
     font-size: 13px;
     padding: 25px;
-    margin-right: 35px;
     font-family: Montserrat Regular;
     border-width: 3px;
     text-decoration: none;
@@ -184,7 +179,6 @@ body {
     background-color: transparent;
     font-size: 13px;
     padding: 15px;
-    margin-right: 35px;
     font-family: Montserrat Regular;
     border-width: 3px;
     text-decoration: none;
@@ -205,6 +199,7 @@ hr {
     margin: 1px;
     border: none;
     margin: auto;
+    justify-content: center;
 }
 
 .global-coords {
@@ -212,14 +207,15 @@ hr {
     flex-direction: row;
     margin-bottom: 5em;
     height: 250px;
+    justify-content: center;
 }
 
 .coords {
     display: flex;
     color: white;
-    margin-left: 120px;
     margin-top: 11px;
     margin-bottom: 11px;
+    margin-right: 15px;
 }
 
 .icons-coords {
@@ -234,6 +230,7 @@ hr {
     color: white;
     margin-top: 11px;
     margin-bottom: 11px;
+    margin-right: 80px;
 }
 
 .info-texte-coords {
@@ -247,57 +244,42 @@ hr {
     display: inline-block;
     flex-direction: column;
     color: #E59154;
-    padding-left: 113px;
     font-size: 32px;
 }
 
 .adress1 {
-    padding-left: 48px;
     font-style: normal;
     font-size: 18px;
 }
 
 .envelop1 {
     color: #E59154;
-    padding-left: 113px;
     font-size: 32px;
 }
 
 .email1 {
-    padding-left: 48px;
     font-style: normal;
     font-size: 18px;
 }
 
 .phone1 {
     color: #E59154;
-    padding-left: 113px;
     font-size: 32px;
 }
 
 .phone-number1 {
-    padding-left: 48px;
     font-style: normal;
     font-size: 18px;
 }
 
 .des-events {
-    padding-left: 48px;
     font-style: normal;
     font-size: 18px;
 }
 
-.propriete-image-coords {
-    padding-left: 150px;
-}
-
-.image-coords {
-    height: 150px;
-}
-
 .img-maps {
+    width: auto;
     height: 250px;
-    width: 100%;
 }
 
 

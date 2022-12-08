@@ -72,9 +72,9 @@ body {
 
 .banner>h1 {
     font-family: LEMON MILK;
-    font-size: 60px;
+    font-size: 54px;
     color: white;
-    padding-left: 200px;
+    text-align: center;
 }
 
 .banner-boutons {

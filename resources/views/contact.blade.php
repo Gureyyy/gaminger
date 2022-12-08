@@ -86,7 +86,7 @@
                     <i class="phone-number1">Téléphone : 04.xx.xx.xx.xx</i>
                 </div>
             </div>
-        </div>
+        </div><br>
         <div class="image-coords">
             <div class="propriete-image-coords">
                 <div>
