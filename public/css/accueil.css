@@ -283,7 +283,8 @@ body {
 }
 
 .bar-img1>img {
-    width: 400px;
+    width: auto;
+    height: 250px;
 }
 
 .bar-img2 {
@@ -292,7 +293,8 @@ body {
 }
 
 .bar-img2>img {
-    width: 400px;
+    width: auto;
+    height: 250px;
 }
 
 

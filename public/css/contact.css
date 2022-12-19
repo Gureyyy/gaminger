@@ -205,7 +205,7 @@ hr {
 .global-coords {
     display: flex;
     flex-direction: row;
-    margin-bottom: 5em;
+    margin-bottom: 3em;
     height: 250px;
     justify-content: center;
 }
@@ -275,6 +275,14 @@ hr {
 .des-events {
     font-style: normal;
     font-size: 18px;
+}
+
+.image-coords {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5em;
+    height: 250px;
+    justify-content: center;
 }
 
 .img-maps {

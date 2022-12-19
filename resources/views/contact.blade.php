@@ -7,7 +7,7 @@
     <script src="https://kit.fontawesome.com/26e46cf4bd.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="shortcut icon" href="/css/imgs/Logo-GGr-icon.ico"/>
+    <link rel="shortcut icon" href="/css/imgs/Logo-GGr-icon.ico" />
     <title>Gaminger - Contact</title>
     <link rel="stylesheet" href="/css/contact.css">
     <link href="/fontawesome-free" rel="stylesheet">
@@ -86,12 +86,12 @@
                     <i class="phone-number1">Téléphone : 04.xx.xx.xx.xx</i>
                 </div>
             </div>
-        </div><br>
-        <div class="image-coords">
-            <div class="propriete-image-coords">
-                <div>
-                    <img class="img-maps" src="/css/imgs/maps.png"></img>
-                </div>
+        </div>
+    </div>
+    <div class="image-coords">
+        <div class="propriete-image-coords">
+            <div>
+                <img class="img-maps" src="/css/imgs/maps.png"></img>
             </div>
         </div>
     </div>
