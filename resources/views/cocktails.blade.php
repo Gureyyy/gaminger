@@ -16,28 +16,18 @@
 
 <body>
 
-    <ul class="menu">
-        <li>
-            <img class="logo" src="/css/imgs/Logo-GGr.png"></img>
-        </li>
-        <li>
-            <a href="accueil">Accueil</a>
-        </li>
-        <li>
+    <div class="header">
+        <div class="header-right">
+            <img class="logo" src="/css/imgs/Logo-GGr.png">
+            <a class="accueil" href="accueil">Accueil</a>
             <a href="cocktails" class="actif">Cocktails</a>
-        </li>
-        <li>
             <a href="events">Événements</a>
-        </li>
-        <li>
             <a href="contact">Contact</a>
-        </li>
-        <li>
-            <a href="admin">
+            <a class="menu" href="admin">
                 <i class="fa-solid fa-user" style="color: white;"></i>
             </a>
-        </li>
-    </ul>
+        </div>
+    </div>
 
     <div>
         <div class="titre">
@@ -64,13 +54,13 @@
 
     <div class="footer">
         <div>
-            <img class="logo2" src="/css/imgs/Logo-GGr.png"></img>
+            <img class="logo" src="/css/imgs/Logo-GGr.png"></img>
         </div>
         <div class="texte">
-            <div>
+            <div class="mentions">
                 <a href="">Mentions légales</a>
             </div>
-            <div>
+            <div class="confid">
                 <a href="">Politique de confidentialité</a>
             </div>
         </div>

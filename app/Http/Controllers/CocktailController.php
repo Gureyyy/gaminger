@@ -3,6 +3,7 @@ namespace App\Http\Controllers;
 
 use App\Models\CocktailModel;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class CocktailController
 {
@@ -47,7 +48,7 @@ class CocktailController
             $cocktail['description'] = $desc;
             $cocktail['prix'] = $price;
             CocktailModel::editCocktail($cocktail, $id);
-
+            Log::info('Edition du cocktail id : .', ['id' => $id]);
             return view('administrateur');
         }
         else{
@@ -60,6 +61,7 @@ class CocktailController
         session_start();
         if(isset($_SESSION['login'])){
         CocktailModel::deleteCocktail($id);
+        Log::info('Suppression du cocktail id : .', ['id' => $id]);
         return view('administrateur');
         }
         else{
@@ -80,7 +82,7 @@ class CocktailController
             $cocktail['price'] = $element['prix'];
             $cocktail['desc'] = $element['description'];
         }
-       
+        Log::info('Obtation des details du cocktail id : .', ['id' => $id]);
         return view('editCocktail', compact('cocktail'));
         }
         else{
@@ -107,6 +109,7 @@ class CocktailController
         $destinationPath = "C:\laragon\www\gaminger\public\uploads\\";
         move_uploaded_file($file,$destinationPath.$fileName);
 
+        Log::info('Creation du cocktail : .', ['name' => $name]);
         //Creation de l'objet cocktail et appel du model
        CocktailModel::createCocktail($name, $desc, $price, $fileName);
         return view('createCocktail');

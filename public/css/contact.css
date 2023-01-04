@@ -3,51 +3,106 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: 'LEMON MILK';
+    font-weight: 400;
+    src: url('/gaminger/fonts/LEMONMILK-BOLD.otf') format('opentype');
+    src: url(‘/gaminger/fonts/Milk.woff’) format(‘woff’);
+}
+
+@font-face {
+    font-family: 'Montserrat Regular';
+    font-weight: 400;
+    src: url(‘/gaminger/fonts/Montserrat-Regular.ttf’) format(‘truetype’);
+    src: url(‘/gaminger/fonts/Montserrat-Regular.woff’) format(‘woff’);
+}
+
+@font-face {
+    font-family: 'Montserrat SemiBold';
+    font-weight: 400;
+    src: url(‘/gaminger/fonts/Montserrat-SemiBold.ttf’) format(‘truetype’);
+    src: url(‘/gaminger/fonts/Montserrat-SemiBold.woff’) format(‘woff’);
+
+}
+
 body {
     font-family: Montserrat Regular;
     background-color: #323232;
 }
 
-.menu {
-    display: flex;
-    padding: 0;
+                            /* Début du menu */
+.header {
+    overflow: hidden;
     background-color: #505050;
-    justify-content: center;
-}
-
-.menu li {
-    list-style-type: none;
-    width: 20%;
-}
-
-.menu a {
-    display: block;
-    min-width: 120px;
-    margin: 1.5rem;
-    padding: 1rem 0;
+    padding: 20px 10px;
     text-align: center;
-    color: #fff;
+}
+
+.header a {
+    color: white;
+    text-align: center;
+    padding: 12px;
     text-decoration: none;
-    line-height: 25px;
+    font-size: 18px;
+    margin: 4.5rem;
+    padding-bottom: 25px;
 }
 
-.menu a:hover {
+.accueil {
+    margin-left: 4.5rem;
+    ;
+}
+
+.header a:hover {
     color: #EFC09A;
 }
 
-.menu a.actif {
+.header a.actif {
     color: #EFC09A;
 }
 
-.menu a:hover.actif {
+.header a:hover.actif {
     color: #EFC09A;
+}
+
+.header-right {
+    float: center;
 }
 
 .logo {
-    height: auto;
-    width: 40%;
-    padding-left: 4rem;
+    height: 100px;
+    width: 100px;
+    vertical-align: middle;
+    padding-right: 2.5rem;
 }
+
+@media screen and (max-width: 992px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+        margin: 0;
+    }
+
+    .header-right {
+        float: none;
+    }
+
+    .accueil {
+        margin-left: 0px;
+    }
+
+    .logo {
+        float: none;
+        display: block;
+        text-align: left;
+        margin: 0;
+    }
+
+}
+
+                            /* Fin du menu */
+
 
 
 .titre {
@@ -66,7 +121,7 @@ body {
 
 .nom {
     color: white;
-    width: 400px;
+    width: 250px;
     border-style: solid;
     border-color: #E59154;
     background-color: transparent;
@@ -84,7 +139,7 @@ body {
 
 .prenom {
     color: white;
-    width: 400px;
+    width: 250px;
     border-style: solid;
     border-color: #E59154;
     background-color: transparent;
@@ -107,7 +162,7 @@ body {
 
 .mail {
     color: white;
-    width: 400px;
+    width: 250px;
     border-style: solid;
     border-color: #E59154;
     background-color: transparent;
@@ -125,7 +180,7 @@ body {
 
 .tel {
     color: white;
-    width: 400px;
+    width: 250px;
     border-style: solid;
     border-color: #E59154;
     background-color: transparent;
@@ -148,9 +203,10 @@ body {
 
 .message {
     color: white;
-    width: 870px;
-    min-width: 400px;
-    height: 220px;
+    width: 570px;
+    max-width: 570px;
+    min-width: 500px;
+    height: 200px;
     border-style: solid;
     border-color: #E59154;
     background-color: transparent;
@@ -188,7 +244,7 @@ body {
 .envoyer:hover {
     color: white;
     background-color: #e59154;
-    transition:0.5s;
+    transition: 0.5s;
     cursor: pointer;
 }
 
@@ -291,7 +347,6 @@ hr {
 }
 
 
-
 .footer {
     display: flex;
     padding: 0;
@@ -319,9 +374,19 @@ hr {
     text-decoration: none;
     flex-direction: row;
     justify-content: space-between;
-    margin-right: 15px;
-    margin-left: 15px;
     font-size: 14px;
+}
+
+.footer>div>.mentions {
+    margin-right: 20px;
+}
+
+.footer>div>.confid {
+    margin-left: 20px;
+}
+
+.footer>.social>div>a>.twitter {
+    margin-right: 20px;
 }
 
 .footer>div>div>a>i {
@@ -338,10 +403,4 @@ hr {
     font-size: 12px;
     background-color: #505050;
     text-align: center;
-}
-
-.logo2 {
-    height: auto;
-    width: 20%;
-    padding-left: 4rem;
 }

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthenticationController;
 use App\Http\Controllers\CocktailController;
 use Illuminate\Support\Facades\Route;
 

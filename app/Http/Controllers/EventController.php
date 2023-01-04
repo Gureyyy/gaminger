@@ -2,6 +2,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\EventModel;
+use Illuminate\Support\Facades\Log;
 
 class EventController
 {
@@ -47,7 +48,7 @@ class EventController
             $event['description'] = $desc;
             $event['date'] = $date;
             eventModel::editevent($event, $id);
-
+            Log::info('Edition de l\'event id : .', ['id' => $id]);
             return view('administrateur');
         }
         else{
@@ -60,6 +61,7 @@ class EventController
         session_start();
         if(isset($_SESSION['login'])){
         EventModel::deleteevent($id);
+        Log::info('Suppression de l\'event id : .', ['id' => $id]);
         return view('administrateur');
         }
         else{
@@ -80,7 +82,8 @@ class EventController
             $event['date'] = $element['date'];
             $event['desc'] = $element['description'];
         }
-       
+
+        Log::info('Obtation des details de l\'event id : .', ['id' => $id]);
         return view('editevent', compact('event'));
         }
         else{
@@ -107,6 +110,8 @@ class EventController
 
         $destinationPath = "C:\laragon\www\gaminger\public\uploads\\";
         move_uploaded_file($fileName,$destinationPath.$event['image']);
+
+        Log::info('Création de l\'event id : .', ['name' => $event['name']]);
 
         //Creation de l'objet event et appel du moodel
        EventModel::createevent($event);

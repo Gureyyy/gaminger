@@ -1,34 +1,42 @@
 <?php
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
+use App\Rules\Recaptcha;
 
 class AuthenticationController
 {
     
 public function connect(){
+
     if(!isset($SESSION['login'])){
         $login = $_POST['login'];
         $password = $_POST['password'];
 
         $user = DB::table('user')->get('*')->where('user',$login);
-        if ($user){
+        if ($user && $login != '' ){
+            $login = $user[0]->user;
             $passwd = $user[0] -> password;
-            if (password_verify($password, $passwd)){
+            $recaptcha = new Recaptcha();
+            if (password_verify($password, $passwd) && $recaptcha->passes(['g-recaptcha-response' => 'required'])){
                 session_start();
-                $_SESSION['login'] = $user[0]->user;
+                $_SESSION['login'] = $login;
+                Log::info("Connexion réussie pour l'utilisateur .",['login' => $login]);
                 return view('administrateur');
                 }      
                 else{
-                    return view('accueil');
+                    Log::info("Connexion échouée pour l'utilisateur .", ['login' => $login]);
+                    return redirect('/');
                 }
             }
             else{
-                return view('accueil');
+                return redirect('/');
             }
     }
     else{
-        return view('administrateur');
+        return redirect('/administrateur');
     }
         
         }

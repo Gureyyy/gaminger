@@ -17,40 +17,25 @@
 
 <body>
 
-    <ul class="menu">
-        <div class="gauche-menu"></div>
-        <li>
-            <div class="logo">
-                <img class="logo-header" src="/css/imgs/Logo-GGr.png" href="/accueil"></img>
-            </div>
-        </li>
-        <li>
-            <a href="accueil" class="actif">Accueil</a>
-        </li>
-        <li>
+    <div class="header">
+        <div class="header-right">
+            <img class="logo" src="/css/imgs/Logo-GGr.png">
+            <a class="accueil" id="actif" href="accueil">Accueil</a>
             <a href="cocktails">Cocktails</a>
-        </li>
-        <li>
             <a href="events">Événements</a>
-        </li>
-        <li>
             <a href="contact">Contact</a>
-        </li>
-        <div class="droite-menu">
-        <li>
-            <a href="admin">
+            <a class="menu" href="admin">
                 <i class="fa-solid fa-user" style="color: white;"></i>
             </a>
-        </li>
         </div>
-    </ul>
+    </div>
 
     <div class="banner">
         <h1 class="gaminger-titre">Gaminger</h1>
         <h1>Bar événementiel gaming</h1>
         <div class="banner-boutons">
             <a href="/cocktails">Nos cocktails</a>
-            <a href="/events">Nos événements</a>
+            <a href="/events" class="button-event">Nos événements</a>
         </div>
     </div>
 
@@ -81,21 +66,25 @@
         <div class="nos-services">
             <h2>Nos services</h2><br><br>
             <div class="icones">
-                <div class="carte">
-                    <i class="fa-solid fa-map-location-dot map"></i><br><br>
-                    <i class="sur-place">Sur place</i>
+                <div class="first-ligne">
+                    <div class="carte">
+                        <i class="fa-solid fa-map-location-dot map"></i><br><br>
+                        <i class="sur-place">Sur place</i>
+                    </div>
+                    <div class="verre">
+                        <i class="fa-solid fa-martini-glass glass"></i><br><br>
+                        <i class="des-cocktails">Des <br> cocktails</i>
+                    </div>
                 </div>
-                <div class="verre">
-                    <i class="fa-solid fa-martini-glass glass"></i><br><br>
-                    <i class="des-cocktails">Des cocktails</i>
-                </div>
-                <div class="calendrier">
-                    <i class="fa-solid fa-calendar-days calendar"></i><br><br>
-                    <i class="des-events">Des événements</i>
-                </div>
-                <div class="cocher">
-                    <i class="fa-solid fa-square-check checked"></i></i><br><br>
-                    <i class="du-fun">Du fun</i>
+                <div class="second-ligne">
+                    <div class="calendrier">
+                        <i class="fa-solid fa-calendar-days calendar"></i><br><br>
+                        <i class="des-events">Des <br> événements</i>
+                    </div>
+                    <div class="cocher">
+                        <i class="fa-solid fa-square-check checked"></i></i><br><br>
+                        <i class="du-fun">Du fun</i>
+                    </div>
                 </div>
             </div><br>
         </div>
@@ -110,13 +99,21 @@
 
         <div class="notre-bar">
             <h2>Notre bar <strong class="en-images">en images</strong></h2><br><br>
-            <div class="bar-img1">
-                <img class="img1" src="/css/imgs/img1.jpg"></img>
-                <img class="img2" src="/css/imgs/img2.jpg"></img>
-            </div><br>
-            <div class="bar-img2">
-                <img class="img3" src="/css/imgs/img3.jpg"></img>
-                <img class="img4" src="/css/imgs/img4.jpg"></img>
+            <div class="part1">
+                <div class="bar-img1">
+                    <img class="img1" src="/css/imgs/img1.jpg"></img>
+                </div>
+                <div class="bar-img2">
+                    <img class="img2" src="/css/imgs/img2.jpg"></img>
+                </div>
+            </div>
+            <div class="part2">
+                <div class="bar-img3">
+                    <img class="img3" src="/css/imgs/img3.jpg"></img>
+                </div>
+                <div class="bar-img4">
+                    <img class="img4" src="/css/imgs/img4.jpg"></img>
+                </div>
             </div>
         </div>
 
@@ -126,38 +123,28 @@
 
     </div>
 
-
-    <div class="footer-global">
-        <div class="div-gauche-footer">
-            <div class="logo2">
-                <img class="logo-footer" src="/css/imgs/Logo-GGr-2.png"></img>
+    <div class="footer">
+        <div>
+            <img class="logo" src="/css/imgs/Logo-GGr.png"></img>
+        </div>
+        <div class="texte">
+            <div class="mentions">
+                <a href="">Mentions légales</a>
+            </div>
+            <div class="confid">
+                <a href="">Politique de confidentialité</a>
             </div>
         </div>
-
-        <div class="footer">
-            <div class="texte-footer">
-                <div>
-                    <a href="">Mentions légales</a>
-                </div>
-                <div>
-                    <a href="">Politique de confidentialité</a>
-                </div>
+        <div class="social">
+            <div>
+                <a href="https://twitter.com"><i class="fa-brands fa-twitter twitter"></i></a>
             </div>
-            <p class="end-footer">Gaminger - Copyright 2022</p>
-
-        </div>
-
-        <div class="div-droite-footer">
-            <div class="social">
-                <div>
-                    <a href="https://twitter.com"><i class="fa-brands fa-twitter twitter"></i></a>
-                </div>
-                <div>
-                    <a href="https://instagram.com"><i class="fa-brands fa-instagram insta"></i></a>
-                </div>
+            <div>
+                <a href="https://instagram.com"><i class="fa-brands fa-instagram insta"></i></a>
             </div>
-        </div>
+        </div><br>
     </div>
+    <p class="end-footer">Gaminger - Copyright 2022<br><br></p>
 
 
 </body>
