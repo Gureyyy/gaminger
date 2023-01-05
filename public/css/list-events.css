@@ -6,23 +6,23 @@
 @font-face {
     font-family: 'LEMON MILK';
     font-weight: 400;
-    src: url('/gaminger/fonts/LEMONMILK-BOLD.otf') format('opentype');
-    src: url(‘/gaminger/fonts/Milk.woff’) format(‘woff’);
+    src: url('/fonts/LEMONMILK-BOLD.otf') format('opentype');
+    src: url('/fonts/Milk.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Montserrat Regular';
     font-weight: 400;
-    src: url(‘/gaminger/fonts/Montserrat-Regular.ttf’) format(‘truetype’);
-    src: url(‘/gaminger/fonts/Montserrat-Regular.woff’) format(‘woff’);
+    src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+    src: url('/fonts/Montserrat-Regular.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Montserrat SemiBold';
     font-weight: 400;
-    src: url(‘/gaminger/fonts/Montserrat-SemiBold.ttf’) format(‘truetype’);
-    src: url(‘/gaminger/fonts/Montserrat-SemiBold.woff’) format(‘woff’);
-    
+    src: url('/fonts/Montserrat-SemiBold.ttf') format('truetype');
+    src: url('/fonts/Montserrat-SemiBold.woff') format('woff');
+
 }
 
 body {
