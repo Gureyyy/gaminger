@@ -85,7 +85,6 @@ body {
     font-family: 'LEMON MILK';
     font-weight: 400;
     src: url('/fonts/LEMONMILK-BOLD.otf') format('opentype');
-    src: url('/fonts/Milk.woff') format('woff');
 }
 
 @font-face {
