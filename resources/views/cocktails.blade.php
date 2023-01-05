@@ -58,10 +58,10 @@
         </div>
         <div class="texte">
             <div class="mentions">
-                <a href="">Mentions légales</a>
+                <a href="/mentions">Mentions légales</a>
             </div>
             <div class="confid">
-                <a href="">Politique de confidentialité</a>
+                <a href="/confid">Politique de confidentialité</a>
             </div>
         </div>
         <div class="social">

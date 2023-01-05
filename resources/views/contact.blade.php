@@ -70,10 +70,10 @@
                     <i class="adress1">Adresse : Rue du fun, 58000 NEVERS</i>
                 </div>
                 <div>
-                    <i class="email1">Mail : gaminger@gmail.com</i>
+                    <i class="email1">Mail : contact@gaminger.ovh</i>
                 </div>
                 <div>
-                    <i class="phone-number1">Téléphone : 04.xx.xx.xx.xx</i>
+                    <i class="phone-number1">Téléphone : 03.86.xx.xx.xx</i>
                 </div>
             </div>
         </div>
@@ -93,10 +93,10 @@
         </div>
         <div class="texte">
             <div class="mentions">
-                <a href="">Mentions légales</a>
+                <a href="/mentions">Mentions légales</a>
             </div>
             <div class="confid">
-                <a href="">Politique de confidentialité</a>
+                <a href="/confid">Politique de confidentialité</a>
             </div>
         </div>
         <div class="social">

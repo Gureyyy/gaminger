@@ -377,6 +377,10 @@ hr {
     font-size: 14px;
 }
 
+.footer a:hover {
+    color: #EFC09A;
+}
+
 .footer>div>.mentions {
     margin-right: 20px;
 }

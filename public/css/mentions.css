@@ -3,28 +3,6 @@
     padding: 0;
 }
 
-@font-face {
-    font-family: 'LEMON MILK';
-    font-weight: 400;
-    src: url('/fonts/LEMONMILK-BOLD.otf') format('opentype');
-    src: url('/fonts/Milk.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Montserrat Regular';
-    font-weight: 400;
-    src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
-    src: url('/fonts/Montserrat-Regular.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Montserrat SemiBold';
-    font-weight: 400;
-    src: url('/fonts/Montserrat-SemiBold.ttf') format('truetype');
-    src: url('/fonts/Montserrat-SemiBold.woff') format('woff');
-
-}
-
 body {
     font-family: Montserrat Regular;
     background-color: #323232;
@@ -57,7 +35,7 @@ body {
     color: #EFC09A;
 }
 
-.header a.actif {
+.header a#actif {
     color: #EFC09A;
 }
 
@@ -103,45 +81,73 @@ body {
 
 /* Fin du menu */
 
-.nos-menus {
+@font-face {
+    font-family: 'LEMON MILK';
+    font-weight: 400;
+    src: url('/fonts/LEMONMILK-BOLD.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Montserrat Regular';
+    font-weight: 400;
+    src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+    src: url('/fonts/Montserrat-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat SemiBold';
+    font-weight: 400;
+    src: url('/fonts/Montserrat-SemiBold.ttf') format('truetype');
+    src: url('/fonts/Montserrat-SemiBold.woff') format('woff');
+
+}
+
+p, ul, li, a {
     color: white;
+    font-family: Montserrat Regular;
+}
+
+.contenu p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-left: 30px;
+}
+
+h2 {
+    color: #E59154;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #EFC09A;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.contenu {
+    display: block;
+    width: 70%;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.partie-contenu {
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    text-align: center;
 }
 
-.titre {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+.div-gauche {
+    width: 15%;
 }
 
-.titre>h2 {
-    font-family: Montserrat SemiBold;
-    font-size: 42px;
-    color: white;
+.div-droite {
+    width: 15%;
 }
 
-.nos-cocktails {
-    color: white;
-    flex: 1 0 33%;
-    margin-bottom: 50px;
-    justify-content: center;
-}
-
-.nos-cocktails>img {
-    width: auto;
-    height: 250px;
-    transition: transform 0.3s;
-}
-
-.nos-cocktails>img:hover {
-    -ms-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-}
-
+/* Début footer */
 
 .footer {
     display: flex;
@@ -173,12 +179,12 @@ body {
     font-size: 14px;
 }
 
-.footer a:hover {
-    color: #EFC09A;
-}
-
 .footer>div>.mentions {
     margin-right: 20px;
+}
+
+.footer a:hover {
+    color: #EFC09A;
 }
 
 .footer>div>.confid {
@@ -204,3 +210,5 @@ body {
     background-color: #505050;
     text-align: center;
 }
+
+/* Fin footer */

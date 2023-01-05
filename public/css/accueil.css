@@ -313,6 +313,7 @@ body {
 .notre-bar {
     color: white;
     width: 70%;
+    margin-bottom: 70px;
 }
 
 .notre-bar h2 {
@@ -510,6 +511,10 @@ body {
 
 .footer>div>.mentions {
     margin-right: 20px;
+}
+
+.footer a:hover {
+    color: #EFC09A;
 }
 
 .footer>div>.confid {

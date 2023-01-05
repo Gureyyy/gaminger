@@ -260,6 +260,10 @@ body {
     margin-left: 20px;
 }
 
+.footer a:hover {
+    color: #EFC09A;
+}
+
 .footer>.social>div>a>.twitter {
     margin-right: 20px;
 }

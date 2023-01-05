@@ -45,14 +45,10 @@
 
         <div class="a-propos">
             <h2>À propos du bar</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Établi à Nevers depuis 2022, Gaminger a su innover dans son approche auprès de sa clientèle : les amateurs de jeux vidéo.<br>
+                Fondé par deux amateurs d'alcool et de jeux vidéo, Gaminger, c'est surtout de l'alcool, des événements, du jeu vidéo et beaucoup de fun.<br>
+                Pendant que l'un s'occupe de la confection de cocktails, l'autre s'occupe de l'animation des différents événements ainsi que de la communication autour de ces derniers et de la maintenance du site.<br><br>
+                Alors, n'hésitez plus, venez faire un tour et surveillez régulièrement les réseaux sociaux ainsi que le site car de nouvelles choses arrivent très vite...</p>
         </div>
 
         <div class="div-droite-a-propos">
@@ -129,10 +125,10 @@
         </div>
         <div class="texte">
             <div class="mentions">
-                <a href="">Mentions légales</a>
+                <a href="/mentions">Mentions légales</a>
             </div>
             <div class="confid">
-                <a href="">Politique de confidentialité</a>
+                <a href="/confid">Politique de confidentialité</a>
             </div>
         </div>
         <div class="social">

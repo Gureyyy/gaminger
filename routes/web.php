@@ -19,6 +19,14 @@ Route::get('/', function () {
     return view('accueil');
 });
 
+Route::get('/mentions', function () {
+    return view('mentions');
+});
+
+Route::get('/confid', function () {
+    return view('confid');
+});
+
 Route::get('/accueil', function () {
     return view('accueil');
 });
