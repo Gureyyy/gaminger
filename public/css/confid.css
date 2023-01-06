@@ -183,6 +183,11 @@ h3 {
     margin-right: 20px;
 }
 
+.footer a#actif {
+    color: #EFC09A;
+}
+
+
 .footer a:hover {
     color: #EFC09A;
 }

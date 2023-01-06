@@ -271,7 +271,7 @@
             <img class="logo" src="/css/imgs/Logo-GGr.png"></img>
         </div>
         <div class="texte">
-            <div class="mentions">
+            <div class="mentions" id="actif">
                 <a href="/mentions">Mentions légales</a>
             </div>
             <div class="confid">

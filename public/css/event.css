@@ -142,6 +142,11 @@ body {
     transform: scale(1.05);
 }
 
+.event-description {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
 .footer {
     display: flex;
     padding: 0;

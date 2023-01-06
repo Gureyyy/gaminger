@@ -42,7 +42,9 @@
             <p class="details"><span style="font-weight: bold">{{$cocktail->nom}}</span>
 
                 <br>{{$cocktail->prix}} &euro;
+            <div class="cocktail-description">
                 <br>{{$cocktail->description}}
+            </div>
             </p>
         </div>
         @endforeach

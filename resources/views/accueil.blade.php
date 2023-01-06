@@ -34,8 +34,12 @@
         <h1 class="gaminger-titre">Gaminger</h1>
         <h1>Bar événementiel gaming</h1>
         <div class="banner-boutons">
-            <a href="/cocktails">Nos cocktails</a>
-            <a href="/events" class="button-event">Nos événements</a>
+            <div class="bouton-cocktail">
+                <a href="/cocktails">Nos cocktails</a>
+            </div>
+            <div classs="bouton-event">
+                <a href="/events" class="button-event">Nos événements</a>
+            </div>
         </div>
     </div>
 

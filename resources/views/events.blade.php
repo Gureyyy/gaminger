@@ -43,8 +43,10 @@
             <img src='uploads/{{$event -> image}}'><br><br>
             <p><span style="font-weight: bold">{{$event->nom}}</span>
 
-                <br>{{$event->date}}
-                <br>{{$event->description}}
+                <br>{{ date("d/m/Y",strtotime($event->date)) }}
+            <div class="event-description">
+                <br>{{ $event->description }}
+            </div>
             </p>
         </div>
         @endforeach

@@ -78,13 +78,13 @@
             </div>
         </div>
     </div>
-    <div class="image-coords">
+    <!-- <div class="image-coords">
         <div class="propriete-image-coords">
             <div>
                 <img class="img-maps" src="/css/imgs/maps.png"></img>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
     <div class="footer">

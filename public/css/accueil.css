@@ -105,7 +105,7 @@ body {
 .banner {
     background-image: url('/css/imgs/banner-site.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
 }
 
 .banner>.gaminger-titre {
@@ -120,6 +120,9 @@ body {
 }
 
 .banner-boutons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     text-align: center;
     height: 60px;
     margin-top: 25px;
@@ -128,13 +131,14 @@ body {
 }
 
 
-.banner-boutons>a {
+.banner-boutons>div>a {
     color: #E59154;
     border-style: solid;
     border-color: #E59154;
     background-color: transparent;
     font-size: 18px;
     padding: 25px;
+    margin-bottom: 15px;
     text-decoration: none;
 }
 
@@ -142,7 +146,7 @@ body {
     margin-left: 35px;
 }
 
-.banner-boutons>a:hover {
+.banner-boutons>div>a:hover {
     color: white;
     background-color: #e59154;
     transition: 0.5s;
@@ -414,9 +418,14 @@ body {
 
 @media screen and (max-width: 600px) {
 
+    .banner {
+        padding-bottom: 68px;
+    }
+
     .banner>h1 {
         font-size: 40px;
     }
+
     .part1 {
         display: flex;
         flex-direction: column;
@@ -461,12 +470,12 @@ body {
         margin-left: 100px;
         text-align: right;
     }
-    
+
     .cocher {
         margin-left: 100px;
         text-align: right;
     }
-    
+
     .calendrier {
         margin-left: 0px;
         text-align: left;
@@ -476,7 +485,61 @@ body {
         text-align: left;
     }
 
+    .footer>div>img {
+        padding-left: 20px;
+    }
 
+}
+
+@media screen and (max-width: 500px) {
+    .banner>h1 {
+        font-size: 32px;
+    }
+
+    .banner-boutons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .bouton-event {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .button-event {
+        margin-left: 0;
+    }
+
+    .bouton-cocktail {
+        margin-bottom: 70px;
+    }
+
+    .footer>div {
+        width: 70%;
+    }
+
+    .footer>div>img {
+        padding-left: 20px;
+    }
+
+    .social {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .twitter {
+        margin-right: 0px !important;
+        padding-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .banner>h1 {
+        font-size: 18px;
+    }
 }
 
 .footer {
