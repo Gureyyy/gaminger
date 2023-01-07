@@ -516,6 +516,7 @@ body {
         margin-bottom: 70px;
     }
 
+    /*
     .footer>div {
         width: 70%;
     }
@@ -533,7 +534,49 @@ body {
     .twitter {
         margin-right: 0px !important;
         padding-bottom: 5px;
+    }*/
+}
+
+@media screen and (max-width: 992px) {
+    .footer>div {
+        text-align: left;
+        margin: 0;
+        flex-direction: column;
     }
+
+    /*.footer-right {
+        flex-direction: column;
+        justify-content: start;
+        text-align: left;
+    }*/
+
+    .footer>.footer-right>.texte {
+        flex-direction: column !important;
+        justify-content: start;
+    }
+
+    .footer>.footer-right>.social {
+        display: flex;
+        flex-direction: row;
+        justify-content: start !important;
+        margin-top: 25px;
+    }
+
+    .end-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: start !important;
+        padding-top: 25px;
+
+    }
+
+    .logo2 {
+        float: none;
+        display: block;
+        text-align: left;
+        margin: 0;
+    }
+
 }
 
 @media screen and (max-width: 300px) {
@@ -544,35 +587,58 @@ body {
 
 .footer {
     display: flex;
-    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
     background-color: #505050;
-    justify-content: center;
-    flex-direction: row;
-    width: 100%;
 }
 
-.footer>div {
+.footer-right {
     display: flex;
-    list-style-type: none;
-    width: 100%;
-    justify-content: center;
-    color: white;
-    align-items: center;
-}
-
-.footer>div>div>a {
-    display: flex;
-    width: 100%;
-    list-style-type: none;
-    color: white;
-    align-items: center;
-    text-decoration: none;
     flex-direction: row;
+    width: 100%;
     justify-content: space-between;
+    font-size: 14px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.footer>.footer-right>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    list-style-type: none;
+    color: white;
+    align-items: center;
+    width: 100%;
+}
+
+.footer>.footer-right>.texte {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    color: white;
+    align-items: center;
+}
+
+.footer>div>div>div>a {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
     font-size: 14px;
 }
 
-.footer>div>.mentions {
+.footer>.footer-right>.social {
+    justify-content: right;
+    width: 100%;
+}
+
+
+.footer>div>div>.mentions {
     margin-right: 20px;
 }
 
@@ -580,16 +646,17 @@ body {
     color: #EFC09A;
 }
 
-.footer>div>.confid {
+.footer>div>div>.confid {
     margin-left: 20px;
 }
 
-.footer>.social>div>a>.twitter {
+.footer>div>.social>div>a>.twitter {
     margin-right: 20px;
 }
 
-.footer>div>div>a>i {
+.footer>div>div>div>a>i {
     display: flex;
+    flex-direction: row;
     width: 100%;
     margin-top: 5px;
     padding-left: 5px;
@@ -598,8 +665,17 @@ body {
 }
 
 .end-footer {
+    display: flex;
+    flex-direction: column;
     color: white;
     font-size: 12px;
     background-color: #505050;
     text-align: center;
+    padding-bottom: 2%;
+}
+
+.logo2 {
+    height: 100px;
+    width: 100px;
+    vertical-align: middle;
 }

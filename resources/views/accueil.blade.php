@@ -124,27 +124,31 @@
     </div>
 
     <div class="footer">
-        <div>
-            <img class="logo" src="/css/imgs/Logo-GGr.png"></img>
-        </div>
-        <div class="texte">
-            <div class="mentions">
-                <a href="/mentions">Mentions légales</a>
-            </div>
-            <div class="confid">
-                <a href="/confid">Politique de confidentialité</a>
-            </div>
-        </div>
-        <div class="social">
+        <div class="footer-right">
             <div>
-                <a href="https://twitter.com"><i class="fa-brands fa-twitter twitter"></i></a>
+                <img class="logo2" src="/css/imgs/Logo-GGr.png"></img>
             </div>
-            <div>
-                <a href="https://instagram.com"><i class="fa-brands fa-instagram insta"></i></a>
+            <div class="texte">
+                <div class="mentions">
+                    <a href="/mentions">Mentions légales</a>
+                </div>
+                <div class="confid">
+                    <a href="/confid">Politique de confidentialité</a>
+                </div>
             </div>
-        </div><br>
+            <div class="social">
+                <div>
+                    <a href="https://twitter.com"><i class="fa-brands fa-twitter twitter"></i></a>
+                </div>
+                <div>
+                    <a href="https://instagram.com"><i class="fa-brands fa-instagram insta"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="end-footer">
+            <p class="end-footer-texte">Gaminger - Copyright 2022</p>
+        </div>
     </div>
-    <p class="end-footer">Gaminger - Copyright 2022<br><br></p>
 
 
 </body>
