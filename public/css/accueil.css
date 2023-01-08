@@ -320,7 +320,7 @@ body {
 
 .bar-img1>img {
     width: auto;
-    height: 250px;
+    height: 220px;
     transition: transform 0.3s;
 }
 
@@ -338,7 +338,7 @@ body {
 
 .bar-img2>img {
     width: auto;
-    height: 250px;
+    height: 220px;
     transition: transform 0.3s;
 }
 
@@ -356,7 +356,7 @@ body {
 
 .bar-img3>img {
     width: auto;
-    height: 250px;
+    height: 220px;
     transition: transform 0.3s;
 }
 
@@ -374,7 +374,7 @@ body {
 
 .bar-img4>img {
     width: auto;
-    height: 250px;
+    height: 220px;
     transition: transform 0.3s;
 }
 
@@ -519,7 +519,7 @@ body {
 
     .partie-a-propos>.a-propos>h2 {
         font-size: 32px;
-        margin-top: 50px;
+        margin-top: 35px;
     }
 
     .partie-a-propos>.a-propos>p {
