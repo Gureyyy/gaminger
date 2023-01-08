@@ -30,7 +30,7 @@ body {
     background-color: #323232;
 }
 
-                            /* Début du menu */
+/* Début du menu */
 .header {
     overflow: hidden;
     background-color: #505050;
@@ -71,7 +71,7 @@ body {
 
 .logo {
     height: 100px;
-    width: 100px;
+    width: auto;
     vertical-align: middle;
     padding-right: 2.5rem;
 }
@@ -101,19 +101,19 @@ body {
 
 }
 
-                            /* Fin du menu */
-
-
+/* Fin du menu */
 
 .titre {
     font-family: Montserrat SemiBold;
-    text-align: center;
     margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
     font-size: 42px;
     color: white;
 }
 
-.nom-prenom {
+/*.nom-prenom {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -121,7 +121,7 @@ body {
 
 .nom {
     color: white;
-    width: 250px;
+    width: auto;
     border-style: solid;
     border-color: #E59154;
     background-color: transparent;
@@ -139,7 +139,7 @@ body {
 
 .prenom {
     color: white;
-    width: 250px;
+    width: auto;
     border-style: solid;
     border-color: #E59154;
     background-color: transparent;
@@ -162,7 +162,7 @@ body {
 
 .mail {
     color: white;
-    width: 250px;
+    width: auto;
     border-style: solid;
     border-color: #E59154;
     background-color: transparent;
@@ -180,7 +180,7 @@ body {
 
 .tel {
     color: white;
-    width: 250px;
+    width: auto;
     border-style: solid;
     border-color: #E59154;
     background-color: transparent;
@@ -203,7 +203,7 @@ body {
 
 .message {
     color: white;
-    width: 570px;
+    width: auto;
     max-width: 570px;
     min-width: 500px;
     height: 200px;
@@ -225,6 +225,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    margin-bottom: 50px;
 }
 
 .envoyer {
@@ -246,12 +247,74 @@ body {
     background-color: #e59154;
     transition: 0.5s;
     cursor: pointer;
+}*/
+
+input[type=text],
+input[type=tel],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #E59154;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
 }
 
 hr {
     height: 1px;
     background-color: white;
-    width: 75%;
+    width: 50%;
     margin: 1px;
     border: none;
     margin: auto;
@@ -328,83 +391,23 @@ hr {
     font-size: 18px;
 }
 
-.des-events {
-    font-style: normal;
-    font-size: 18px;
-}
+@media screen and (max-width: 480px) {
 
-.image-coords {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 5em;
-    height: 250px;
-    justify-content: center;
-}
+    .titre {
+        font-size: 32px;
+    }
 
-.img-maps {
-    width: auto;
-    height: 250px;
-}
+    .global-coords {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
 
+    .icons-coords {
+        font-size: 32px;
+    }
 
-.footer {
-    display: flex;
-    padding: 0;
-    background-color: #505050;
-    justify-content: center;
-    flex-direction: row;
-    width: 100%;
-}
+    .texte-coords {
+        font-size: 21px;
+    }
 
-.footer>div {
-    display: flex;
-    list-style-type: none;
-    width: 100%;
-    justify-content: center;
-    color: white;
-    align-items: center;
-}
-
-.footer>div>div>a {
-    display: flex;
-    width: 100%;
-    list-style-type: none;
-    color: white;
-    align-items: center;
-    text-decoration: none;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 14px;
-}
-
-.footer a:hover {
-    color: #EFC09A;
-}
-
-.footer>div>.mentions {
-    margin-right: 20px;
-}
-
-.footer>div>.confid {
-    margin-left: 20px;
-}
-
-.footer>.social>div>a>.twitter {
-    margin-right: 20px;
-}
-
-.footer>div>div>a>i {
-    display: flex;
-    width: 100%;
-    margin-top: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-    font-size: 24px;
-}
-
-.end-footer {
-    color: white;
-    font-size: 12px;
-    background-color: #505050;
-    text-align: center;
 }

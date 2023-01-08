@@ -67,7 +67,7 @@ body {
 
 .logo {
     height: 100px;
-    width: 100px;
+    width: auto;
     vertical-align: middle;
     padding-right: 2.5rem;
 }
@@ -99,7 +99,7 @@ body {
 
 /* Fin du menu */
 
-.admin-connect {
+/*.admin-connect {
     display: flex;
     border-radius: 15px;
     background-color: white;
@@ -220,9 +220,98 @@ body {
         justify-content: center;
     }
     
+}*/
+
+.titre {
+    font-family: Montserrat SemiBold;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 42px;
+    color: white;
 }
 
-.footer {
+
+input[type=text],
+input[type=tel],
+input[type=email],
+input[type=password],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #E59154;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+
+    .col-25,
+    .col-75 {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.g-recaptcha {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+@media screen and (max-width: 480px) {
+
+    .titre {
+        font-size: 32px;
+    }
+
+}
+
+
+/*.footer {
     display: flex;
     padding: 0;
     background-color: #505050;
@@ -282,4 +371,4 @@ body {
     font-size: 12px;
     background-color: #505050;
     text-align: center;
-}
+}*/

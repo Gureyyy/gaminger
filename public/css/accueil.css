@@ -49,7 +49,7 @@ body {
 
 .logo {
     height: 100px;
-    width: 100px;
+    width: auto;
     vertical-align: middle;
     padding-right: 2.5rem;
 }
@@ -79,7 +79,7 @@ body {
 
 }
 
-/* Fin du menu */
+/*Fin du menu */
 
 @font-face {
     font-family: 'LEMON MILK';
@@ -109,7 +109,7 @@ body {
 }
 
 .banner>.gaminger-titre {
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 .banner>h1 {
@@ -127,7 +127,7 @@ body {
     height: 60px;
     margin-top: 25px;
     padding-top: 75px;
-    padding-bottom: 25px;
+    padding-bottom: 75px;
 }
 
 
@@ -158,36 +158,32 @@ body {
     flex-wrap: wrap;
 }
 
-.div-gauche-a-propos {
-    width: 15%;
-}
-
-.div-droite-a-propos {
-    width: 15%;
-}
-
 .a-propos {
     color: white;
-    width: 70%;
+    width: 100%;
 }
 
 .a-propos h2 {
     font-family: Montserrat SemiBold;
     margin-top: 70px;
+    padding-left: 15%;
+    padding-right: 15%;
     font-size: 42px;
 }
 
 .a-propos p {
-    padding-top: 50px;
-    margin-bottom: 90px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .nos-services {
     color: white;
-    width: 70%;
+    width: 100%;
     background-color: #E59154;
     padding-top: 70px;
-    padding-bottom: 40px;
+    padding-bottom: 70px;
 }
 
 .partie-nos-services {
@@ -197,20 +193,11 @@ body {
     justify-content: space-between;
 }
 
-.div-gauche-nos-services {
-    width: 15%;
-    background-color: #E59154;
-}
-
-.div-droite-nos-services {
-    width: 15%;
-    background-color: #E59154;
-}
-
 .nos-services h2 {
     font-family: Montserrat SemiBold;
+    padding-left: 15%;
+    padding-right: 15%;
     font-size: 42px;
-    color: white;
 }
 
 .nos-services ul {
@@ -306,17 +293,9 @@ body {
     margin-bottom: 50px;
 }
 
-.div-gauche-notre-bar {
-    width: 15%;
-}
-
-.div-droite-notre-bar {
-    width: 15%;
-}
-
 .notre-bar {
     color: white;
-    width: 70%;
+    width: 100%;
     margin-bottom: 70px;
 }
 
@@ -324,6 +303,8 @@ body {
     font-family: Montserrat SemiBold;
     margin-top: 70px;
     font-size: 42px;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .en-images {
@@ -407,7 +388,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 .part2 {
@@ -419,44 +400,11 @@ body {
 @media screen and (max-width: 600px) {
 
     .banner {
-        padding-bottom: 68px;
+        padding-bottom: 75px;
     }
 
     .banner>h1 {
-        font-size: 40px;
-    }
-
-    .part1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-bottom: 50px;
-    }
-
-    .bar-img1 {
-        padding-right: 0;
-        padding-bottom: 10px;
-    }
-
-    .bar-img2 {
-        padding-left: 0;
-        padding-top: 10px;
-    }
-
-    .bar-img3 {
-        padding-right: 0;
-        padding-bottom: 10px;
-    }
-
-    .bar-img4 {
-        padding-left: 0;
-        padding-top: 10px;
-    }
-
-    .part2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        font-size: 36px;
     }
 
     .icones {
@@ -493,7 +441,7 @@ body {
 
 @media screen and (max-width: 500px) {
     .banner>h1 {
-        font-size: 32px;
+        font-size: 36px;
     }
 
     .banner-boutons {
@@ -516,43 +464,158 @@ body {
         margin-bottom: 70px;
     }
 
-    /*
-    .footer>div {
-        width: 70%;
+    .part1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 50px;
     }
 
-    .footer>div>img {
-        padding-left: 20px;
+    .bar-img1 {
+        width: auto;
+        padding-bottom: 10px;
+        padding-left: 15%;
+        padding-right: 15%;
     }
 
-    .social {
+    .bar-img2 {
+        width: auto;
+        padding-top: 10px;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .bar-img3 {
+        width: auto;
+        padding-bottom: 10px;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .bar-img4 {
+        width: auto;
+        padding-top: 10px;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .part2 {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-
-    .twitter {
-        margin-right: 0px !important;
-        padding-bottom: 5px;
-    }*/
 }
 
 @media screen and (max-width: 992px) {
+
+
+    .banner-boutons {
+        margin-top: 50px;
+    }
+
+    .banner-boutons>div>a {
+        font-size: 16px;
+    }
+
+    .partie-a-propos>.a-propos>h2 {
+        font-size: 32px;
+        margin-top: 50px;
+    }
+
+    .partie-a-propos>.a-propos>p {
+        font-size: 16px;
+        padding-top: 25px;
+        margin-bottom: 45px;
+    }
+
     .footer>div {
         text-align: left;
         margin: 0;
         flex-direction: column;
     }
 
-    /*.footer-right {
-        flex-direction: column;
-        justify-content: start;
-        text-align: left;
-    }*/
+    .nos-services>h2 {
+        font-size: 32px;
+    }
 
-    .footer>.footer-right>.texte {
+    .notre-bar>h2 {
+        font-size: 32px;
+    }
+
+    .icones {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 50px;
+        font-size: 16px;
+    }
+
+    .map {
+        font-size: 32px;
+    }
+
+    .sur-place {
+        font-size: 21px;
+    }
+
+    .glass {
+        font-size: 32px;
+    }
+
+    .des-cocktails {
+        font-size: 21px;
+    }
+
+    .calendar {
+        font-size: 32px;
+    }
+
+    .des-events {
+        font-size: 21px;
+    }
+
+    .checked {
+        font-size: 32px;
+    }
+
+    .du-fun {
+        font-size: 21px;
+    }
+
+    .verre {
+        margin-left: 100px;
+        text-align: right;
+    }
+
+    .cocher {
+        margin-left: 100px;
+        text-align: right;
+    }
+
+    .calendrier {
+        margin-left: 0px;
+        text-align: left;
+    }
+
+    .carte {
+        text-align: left;
+    }
+
+    /*.footer>.footer-right>.texte {
+        display: flex;
         flex-direction: column !important;
         justify-content: start;
+        align-items: center;
+    }
+
+    .footer>.footer-right>.texte>.mentions {
+        margin-right: 0;
+        justify-content: start !important;
+    }
+
+    .footer>.footer-right>.texte>.confid {
+        margin-left: 0;
+        justify-content: start !important;
     }
 
     .footer>.footer-right>.social {
@@ -567,7 +630,10 @@ body {
         flex-direction: row;
         justify-content: start !important;
         padding-top: 25px;
+    }
 
+    .footer>div>div>.mentions {
+        margin-right: 0px;
     }
 
     .logo2 {
@@ -575,17 +641,109 @@ body {
         display: block;
         text-align: left;
         margin: 0;
+    }*/
+
+    .part1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    .bar-img1 {
+        width: auto;
+        padding-bottom: 10px;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .bar-img2 {
+        width: auto;
+        padding-top: 10px;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .bar-img3 {
+        width: auto;
+        padding-bottom: 10px;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .bar-img4 {
+        width: auto;
+        padding-top: 10px;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .part2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
 }
 
 @media screen and (max-width: 300px) {
+
+    .banner-boutons {
+        margin-top: 20px;
+    }
+
     .banner>h1 {
         font-size: 18px;
     }
+
+    .part1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+
+    .bar-img1 {
+        width: 30%;
+        height: 125px;
+        padding-bottom: 100px;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .bar-img2 {
+        width: 30%;
+        height: 125px;
+        padding-top: 100px;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .bar-img3 {
+        width: 30%;
+        height: 125px;
+        padding-bottom: 100px;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .bar-img4 {
+        width: 30%;
+        height: 125px;
+        padding-top: 100px;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .part2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
-.footer {
+
+/*.footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -678,4 +836,4 @@ body {
     height: 100px;
     width: 100px;
     vertical-align: middle;
-}
+}*/

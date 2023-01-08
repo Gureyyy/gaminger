@@ -71,7 +71,7 @@ body {
 
 .logo {
     height: 100px;
-    width: 100px;
+    width: auto;
     vertical-align: middle;
     padding-right: 2.5rem;
 }
@@ -135,13 +135,13 @@ body {
 }
 
 .cocktail-description {
-        padding-left: 10%;
-        padding-right: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .nos-cocktails>img {
     width: auto;
-    height: 250px;
+    height: 200px;
     transition: transform 0.3s;
 }
 
@@ -152,7 +152,7 @@ body {
 }
 
 
-.footer {
+/*.footer {
     display: flex;
     padding: 0;
     background-color: #505050;
@@ -212,4 +212,16 @@ body {
     font-size: 12px;
     background-color: #505050;
     text-align: center;
+}*/
+
+@media screen and (max-width: 480px) {
+
+    .img-cocktail {
+        width: 100%;
+    }
+
+    .titre>h2 {
+        font-size: 32px;
+    }
+
 }

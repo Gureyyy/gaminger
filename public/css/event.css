@@ -71,7 +71,7 @@ body {
 
 .logo {
     height: 100px;
-    width: 100px;
+    width: auto;
     vertical-align: middle;
     padding-right: 2.5rem;
 }
@@ -132,7 +132,7 @@ body {
 
 .events>img {
     width: auto;
-    height: 250px;
+    height: 200px;
     transition: transform 0.3s;
 }
 
@@ -147,7 +147,7 @@ body {
     padding-right: 10%;
 }
 
-.footer {
+/*.footer {
     display: flex;
     padding: 0;
     background-color: #505050;
@@ -207,4 +207,16 @@ body {
     font-size: 12px;
     background-color: #505050;
     text-align: center;
+}*/
+
+@media screen and (max-width: 480px) {
+
+    .img-event {
+        width: 100%;
+    }
+
+    .titre>h2 {
+        font-size: 32px;
+    }
+
 }

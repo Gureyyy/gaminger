@@ -49,7 +49,7 @@ body {
 
 .logo {
     height: 100px;
-    width: 100px;
+    width: auto;
     vertical-align: middle;
     padding-right: 2.5rem;
 }
@@ -147,7 +147,9 @@ h3 {
     width: 15%;
 }
 
-/* Début footer */
+
+
+/*
 
 .footer {
     display: flex;
@@ -210,5 +212,4 @@ h3 {
     background-color: #505050;
     text-align: center;
 }
-
-/* Fin footer */
+*/
