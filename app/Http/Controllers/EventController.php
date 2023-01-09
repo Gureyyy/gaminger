@@ -35,6 +35,7 @@ class EventController
                 move_uploaded_file($file,$destinationPath.$picture);
                 $event['image'] = $picture;
             }
+            
             else{
                 $picture = "";
                 $eventPicture = EventModel::geteventById($id);

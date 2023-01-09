@@ -16,7 +16,7 @@ public function connect(){
         $password = $_POST['password'];
 
         $user = DB::table('user')->get('*')->where('user',$login);
-        if ($user && $login != '' ){
+        if (isset($user[0]) && $login != '' && $password != '' ){
             $login = $user[0]->user;
             $passwd = $user[0] -> password;
             $recaptcha = new Recaptcha();
@@ -28,11 +28,11 @@ public function connect(){
                 }      
                 else{
                     Log::info("Connexion échouée pour l'utilisateur .", ['login' => $login]);
-                    return redirect('/');
+                    return redirect('/admin?error=wrong-password');
                 }
             }
             else{
-                return redirect('/');
+                return redirect('/admin?error=wrong-password');
             }
     }
     else{

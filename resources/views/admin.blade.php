@@ -22,7 +22,6 @@
             color: #484848;
         }
     </style>
-
 </head>
 
 <body>
@@ -99,7 +98,9 @@
                             </div>
                         </div>
                     </div>
-
+                    <div id="error-password" class="alert alert-danger" role="alert">
+                        Identifiant ou mot de passe incorrect.
+                    </div>
                     <div class="row">
                         <input type="submit" class="connect" type="submit" value="Connexion"></input>
                     </div>
@@ -130,7 +131,18 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-
+    <script>
+        var $_GET = [];
+        window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(a, name, value) {
+            $_GET[name] = value;
+        });
+        if ($_GET['error'] == 'wrong-password') {
+            document.getElementById('error-password').style.display= "block"
+        }
+        else{
+            document.getElementById('error-password').style.display= "none"
+        }
+    </script>
     <!-- <div class="footer">
         <div>
             <img class="logo" src="/css/imgs/Logo-GGr.png"></img>
