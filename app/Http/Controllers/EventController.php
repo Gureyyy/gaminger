@@ -84,7 +84,7 @@ class EventController
         }
 
         Log::info('Obtation des details de l\'event id : .', ['id' => $id]);
-        return view('editevent', compact('event'));
+        return view('editEvent', compact('event'));
         }
         else{
             return view('accueil');
@@ -111,11 +111,11 @@ class EventController
         $destinationPath = "C:\laragon\www\gaminger\public\uploads\\";
         move_uploaded_file($fileName,$destinationPath.$event['image']);
 
-        Log::info('Création de l\'event id : .', ['name' => $event['name']]);
+        Log::info('Création de l\'event id : .', ['name' => $event['nom']]);
 
         //Creation de l'objet event et appel du moodel
        EventModel::createevent($event);
-        return view('createevent');
+        return view('createEvent');
         }
         else{
             return view('accueil');

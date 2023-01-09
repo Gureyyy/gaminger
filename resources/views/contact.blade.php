@@ -30,7 +30,7 @@
 
     <header class="header">
         <div class="header-right">
-            <img class="logo" src="/css/imgs/Logo-GGr.png">
+            <a href="/accueil"><img class="logo" src="/css/imgs/Logo-GGr.png"></a>
             <a class="accueil" href="accueil">Accueil</a>
             <a href="cocktails">Cocktails</a>
             <a href="events">Événements</a>
@@ -62,7 +62,7 @@
             </form> -->
 
             <form>
-            <div class="container">
+                <div class="container">
                     <div class="row">
                         <div class="col">
                             <label for="pname">Prénom</label>
@@ -106,7 +106,7 @@
                     <div class="row">
                         <input type="submit" value="Envoyer">
                     </div>
-                </form>
+            </form>
             </div><br><br>
 
             <hr>

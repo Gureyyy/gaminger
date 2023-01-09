@@ -29,7 +29,7 @@
 <body>
     <header class="header">
         <div class="header-right">
-            <img class="logo" src="/css/imgs/Logo-GGr.png">
+            <a href="/accueil"><img class="logo" src="/css/imgs/Logo-GGr.png"></a>
             <a class="accueil" href="accueil">Accueil</a>
             <a href="cocktails">Cocktails</a>
             <a href="events" class="actif">Événements</a>
@@ -69,7 +69,7 @@
             </div>
         </section>
     </main>
-    
+
     <!-- <div class="footer">
                 <div>
                     <img class="logo" src="/css/imgs/Logo-GGr.png"></img>

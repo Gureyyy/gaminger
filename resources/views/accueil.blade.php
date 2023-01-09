@@ -29,7 +29,7 @@
 <body>
     <header class="header">
         <div class="header-right">
-            <img class="logo" src="/css/imgs/Logo-GGr.png">
+            <a href="/accueil"><img class="logo" src="/css/imgs/Logo-GGr.png"></a>
             <a class="accueil" id="actif" href="accueil">Accueil</a>
             <a href="cocktails">Cocktails</a>
             <a href="events">Événements</a>
@@ -97,7 +97,7 @@
 
         <section>
             <div class="notre-bar">
-                <h2>Notre bar <strong class="en-images">en images</strong></h2><br><br>
+                <h2>Notre bar <span class="en-images">en images</span></h2><br><br>
                 <div class="part1">
                     <div class="bar-img1">
                         <img class="img1" src="/css/imgs/img1.jpg"></img>

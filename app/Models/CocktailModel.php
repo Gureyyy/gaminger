@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
     Class CocktailModel extends Model{
 
         public static function createCocktail($name, $desc, $price, $picture){
-            $query = 'INSERT INTO cocktail (`nom`, `description`, `image`, `prix`) VALUES ("%s", "%s", "%s", %e)';
+            $query = 'INSERT INTO cocktail (`id`, `nom`, `description`, `image`, `prix`) VALUES (NULL,"%s", "%s", "%s", %e)';
             DB::insert(sprintf($query, $name, $desc, $picture, $price));
         }
 
