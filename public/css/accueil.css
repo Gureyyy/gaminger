@@ -179,7 +179,7 @@ body {
 }
 
 .nos-services {
-    color: white;
+    color: #323232;
     width: 100%;
     background-color: #E59154;
     padding-top: 70px;
@@ -219,7 +219,7 @@ body {
 }
 
 .map {
-    color: white;
+    color: #323232;
     font-size: 48px;
 }
 
@@ -234,7 +234,7 @@ body {
 }
 
 .glass {
-    color: white;
+    color: #323232;
     font-size: 48px;
 }
 
@@ -249,7 +249,7 @@ body {
 }
 
 .calendar {
-    color: white;
+    color: #323232;
     font-size: 48px;
 }
 
@@ -277,7 +277,7 @@ body {
 }
 
 .checked {
-    color: white;
+    color: #323232;
     font-size: 48px;
 }
 
@@ -320,7 +320,7 @@ body {
 
 .bar-img1>img {
     width: auto;
-    height: 220px;
+    height: 200px;
     transition: transform 0.3s;
 }
 
@@ -338,7 +338,7 @@ body {
 
 .bar-img2>img {
     width: auto;
-    height: 220px;
+    height: 200px;
     transition: transform 0.3s;
 }
 
@@ -356,7 +356,7 @@ body {
 
 .bar-img3>img {
     width: auto;
-    height: 220px;
+    height: 200px;
     transition: transform 0.3s;
 }
 
@@ -374,7 +374,7 @@ body {
 
 .bar-img4>img {
     width: auto;
-    height: 220px;
+    height: 200px;
     transition: transform 0.3s;
 }
 
